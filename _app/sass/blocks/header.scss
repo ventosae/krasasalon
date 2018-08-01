@@ -1,0 +1,14 @@
+.header {
+  // grid-area: header;
+  grid-column: 1/-1;
+  display: grid;
+}
+
+.header__logo {
+  background-color: $main-p;
+  height: 6.1em;
+  justify-items: center;
+  display: inherit;
+  align-items: center;
+  padding-top: 15px;
+}

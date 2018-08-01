@@ -1,20 +1,18 @@
 @font-face {
-  font-family: "Oswald Medium";
-  src: local("Oswald Medium"),
-    url("../fonts/oswaldmedium.woff2") format("woff2"),
-    url("../fonts/oswaldmedium.woff") format("woff");
+  font-family: "Futuris-Cyrillic";
+  src: local("Futuris-Cyrillic"),
+    url("../fonts/Futuris-Cyrillic_19217.woff") format("woff");
+
   font-style: normal;
   font-weight: 500;
   font-display: block;
 }
 
 @font-face {
-  font-family: "Oswald";
-  src: local("Oswald Regular"),
-    url("../fonts/oswaldregular.woff2") format("woff2"),
-    url("../fonts/oswaldregular.woff") format("woff");
+  font-family: "Futuris-Bold";
+  src: local("Futuris-Bold_19216"),
+    url("../fonts/Futuris-Bold_19216.woff") format("woff");
   font-style: normal;
-  font-weight: 500;
+  font-weight: 600;
   font-display: block;
-
 }

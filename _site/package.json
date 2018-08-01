@@ -8,6 +8,7 @@
     "autoprefixer": "8.3.x",
     "browser-sync": "^2.24.5",
     "child_process": "^1.0.2",
+    "csscomb": "^4.2.0",
     "del": "^3.0.0",
     "gulp": "3.9.x",
     "gulp-csso": "^3.0.1",
@@ -28,11 +29,11 @@
     "posthtml-include": "^1.2.0",
     "run-sequence": "^2.2.1",
     "stylelint": "^9.2.1",
-    "stylelint-config-htmlacademy": "0.1.x"
+    "stylelint-config-htmlacademy": "^0.1.1"
   },
   "scripts": {
     "editorconfig": "editorconfig-cli",
-    "stylelint": "stylelint \"source/sass/**/*.scss\" --syntax scss",
+    "stylelint": "stylelint \"_app/sass/**/*.scss\" --syntax scss",
     "test": "npm run editorconfig && npm run stylelint",
     "build": "gulp build",
     "start": "gulp serve",
