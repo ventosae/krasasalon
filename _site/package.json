@@ -67,6 +67,7 @@
     "node": "8.11"
   },
   "dependencies": {
+    "hamburgers": "^0.9.3",
     "jekyll": "^3.0.0-beta1"
   }
 }

@@ -12,3 +12,37 @@
   align-items: center;
   padding-top: 15px;
 }
+
+.header__mobile-info {
+  color: white;
+  width: 80%;
+  display: flex;
+  justify-content: space-evenly;
+  align-content: center;
+  min-height: 55px;
+  align-items: center;
+}
+
+.header__number {
+  @include reset;
+  text-decoration: underline;
+  font-size: 1.286em;
+  line-height: 1.714em;
+}
+
+.header__toggle {
+  display: flex;
+  width: 5em;
+  appearance: none;
+  border: none;
+  background-color: $dark-b;
+  padding: 0;
+  margin: 0;
+  flex: 0 1 auto;
+}
+
+.header__mobile-wrapper {
+  display: flex;
+  background-color: $light-b;
+  justify-content: space-between;
+}
