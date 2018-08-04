@@ -1,0 +1,22 @@
+.about {
+  display: grid;
+  grid-gap: 1.071em;
+  justify-items: center;
+}
+
+.about__header {
+  @include reset;
+  text-transform: uppercase;
+  line-height: 2.143rem;
+  font-size: 1.571rem;
+  text-align: center;
+  width: 80%;
+  padding-top: 1.071em;
+}
+
+.about__description {
+  @include reset;
+  line-height: 18px;
+  text-align: center;
+
+}

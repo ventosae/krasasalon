@@ -1,0 +1,15 @@
+.benefits_radio {
+  display: none;
+}
+
+.benefits__slide {
+  @include reset;
+}
+
+.benefits__title {
+  @include reset;
+}
+
+.benefits__description {
+  @include reset;
+}

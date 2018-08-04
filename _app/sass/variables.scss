@@ -14,6 +14,7 @@ $futurist-medium-font: "Futuris-Bold", arial, helvetica, sans-serif;
 @mixin reset($padding: 0, $margin: 0) {
   padding: $padding;
   margin: $margin;
+  list-style: none;
 }
 
 // @mixin desktop($padding: 40px, $width: 1300px) {
