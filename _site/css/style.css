@@ -7,7 +7,7 @@
 
 @font-face {
   font-family: "Futuris-Bold";
-  src: local("Futuris-Bold_19216"), url("../fonts/Futuris-Bold_19216.woff") format("woff");
+  src: local("Futuris-Bold"), url("../fonts/Futuris-Bold_19216.woff") format("woff");
   font-style: normal;
   font-weight: 600;
   font-display: block; }
@@ -394,20 +394,46 @@ html {
 .benefits_radio {
   display: none; }
 
-.benefits__slide {
+.benefits__slides {
   padding: 0;
   margin: 0;
-  list-style: none; }
+  list-style: none;
+  background-color: #f2f3f7;
+  grid-gap: 1.563rem;
+  padding-top: 25px; }
+
+.benefits__slide {
+  text-align: center;
+  position: relative;
+  display: grid;
+  grid-template-columns: 79%;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  justify-items: center;
+  padding-bottom: 25px; }
 
 .benefits__title {
   padding: 0;
   margin: 0;
-  list-style: none; }
+  list-style: none;
+  font-size: 1.5714rem;
+  font-style: "Futuris-Bold", arial, helvetica, sans-serif;
+  line-height: 2.1429rem;
+  margin-bottom: 10px;
+  margin-top: 10px; }
 
 .benefits__description {
   padding: 0;
   margin: 0;
-  list-style: none; }
+  list-style: none;
+  line-height: 1.2857rem;
+  font-size: 18px; }
+
+.benefits__svg {
+  width: 111px;
+  height: 111px;
+  fill: #ad9d8f; }
 
 .header {
   grid-column: 1/-1;
@@ -527,6 +553,38 @@ html {
   grid-template-rows: 140px auto;
   margin-left: auto;
   margin-right: auto; }
+
+.slider__toggles {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  position: absolute;
+  bottom: -10px;
+  left: 50%;
+  z-index: 5;
+  width: 76px;
+  height: 10px;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%); }
+
+.slider__toggle {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  width: 7px;
+  height: 7px;
+  font-size: 0;
+  background-color: #444445;
+  -webkit-transform: rotate(45deg);
+          transform: rotate(45deg);
+  cursor: pointer;
+  -webkit-transition: background-color 0.2s linear;
+  transition: background-color 0.2s linear; }
 
 /*!
  * Hamburgers

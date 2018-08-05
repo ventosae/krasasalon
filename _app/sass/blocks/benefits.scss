@@ -2,14 +2,43 @@
   display: none;
 }
 
-.benefits__slide {
+.benefits__slides {
   @include reset;
+  background-color: $light-g;
+  grid-gap: 1.563rem;
+  padding-top: 25px;
+
+}
+
+.benefits__slide {
+  text-align: center;
+  position: relative;
+  display: grid;
+  grid-template-columns: 79%;
+  justify-content: center;
+  // grid-gap: 1.7857rem;
+  justify-items: center;
+  padding-bottom: 25px;
 }
 
 .benefits__title {
   @include reset;
+  font-size: 1.5714rem;
+  font-style: $futurist-medium-font;
+  line-height: 2.1429rem;
+  margin-bottom: 10px;
+  margin-top: 10px;
+
 }
 
 .benefits__description {
   @include reset;
+  line-height: 1.2857rem;
+  font-size: 18px;
+}
+
+.benefits__svg {
+  width: 111px;
+  height: 111px;
+  fill: $dark-b;
 }
