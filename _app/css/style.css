@@ -320,6 +320,9 @@ template {
   margin-left: 0.909rem;
   margin-right: 0.909rem; }
 
+html {
+  font-size: 14px; }
+
 body {
   min-width: 320px;
   margin: 0;
@@ -395,40 +398,46 @@ html {
   display: none; }
 
 .benefits__slides {
-  padding: 0;
-  margin: 0;
-  list-style: none;
+  padding-top: 25px;
+  height: 320px;
   background-color: #f2f3f7;
   grid-gap: 1.563rem;
-  padding-top: 25px; }
+  padding: 0;
+  margin: 0;
+  list-style: none; }
 
 .benefits__slide {
-  text-align: center;
   position: relative;
+  width: 100%;
+  min-height: 280px;
   display: grid;
-  grid-template-columns: 79%;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  justify-items: center;
-  padding-bottom: 25px; }
+  margin-bottom: 25px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center;
+  grid-template-columns: 70%;
+  justify-items: center; }
 
 .benefits__title {
+  margin-top: 10px;
+  margin-bottom: 10px;
+  font-size: 1.5714rem;
+  line-height: 2.1429rem;
+  font-style: "Futuris-Bold", arial, helvetica, sans-serif;
   padding: 0;
   margin: 0;
-  list-style: none;
-  font-size: 1.5714rem;
-  font-style: "Futuris-Bold", arial, helvetica, sans-serif;
-  line-height: 2.1429rem;
-  margin-bottom: 10px;
-  margin-top: 10px; }
+  list-style: none; }
 
 .benefits__description {
+  font-size: 18px;
+  line-height: 1.2857rem;
   padding: 0;
   margin: 0;
-  list-style: none;
-  line-height: 1.2857rem;
-  font-size: 18px; }
+  list-style: none; }
 
 .benefits__svg {
   width: 111px;
@@ -554,37 +563,58 @@ html {
   margin-left: auto;
   margin-right: auto; }
 
-.slider__toggles {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  position: absolute;
-  bottom: -10px;
-  left: 50%;
-  z-index: 5;
-  width: 76px;
-  height: 10px;
-  -webkit-transform: translateX(-50%);
-          transform: translateX(-50%); }
+.price__table {
+  display: grid; }
 
-.slider__toggle {
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
-  width: 7px;
-  height: 7px;
-  font-size: 0;
-  background-color: #444445;
-  -webkit-transform: rotate(45deg);
-          transform: rotate(45deg);
-  cursor: pointer;
-  -webkit-transition: background-color 0.2s linear;
-  transition: background-color 0.2s linear; }
+.price__header {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  justify-self: center;
+  font-size: 22px;
+  line-height: 30px;
+  font-family: "Futuris-Bold", arial, helvetica, sans-serif;
+  text-transform: capitalize;
+  padding-bottom: 18px;
+  padding-top: 18px; }
+
+.price__items {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  display: grid;
+  grid-template-columns: 1fr;
+  color: white; }
+
+.price__item {
+  background-color: #ad9d8f;
+  padding-left: 0.909rem;
+  padding-right: 0.909rem; }
+  .price__item:nth-child(2n) {
+    background-color: #f2f3f7;
+    color: #444445; }
+
+.price__cost {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  font-size: 1.2857rem;
+  line-height: 1.2857rem;
+  padding-top: 20px;
+  padding-bottom: 20px; }
+
+.price__service {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  justify-self: start; }
+
+.price__product {
+  padding: 0;
+  margin: 0;
+  list-style: none; }
 
 /*!
  * Hamburgers
