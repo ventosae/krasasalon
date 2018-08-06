@@ -56,13 +56,16 @@ gulp.task("style", function () {
     .pipe(postcss([
       autoprefixer()
     ]))
+
     .pipe(gulp.dest("css"))
     .pipe(gulp.dest("_site/css/"))
+    .pipe(gulp.dest("_app/css/"))
     .pipe(minify({
         }))
     .pipe(rename("style.min.css"))
     .pipe(gulp.dest("css"))
     .pipe(gulp.dest("_site/css/"))
+    .pipe(gulp.dest("_app/css/"))
     .pipe(server.stream());
 });
 
@@ -139,7 +142,7 @@ gulp.task('build:jekyll:watch', ['jekyll-build'], function(cb) {
 
 gulp.task("serve", ["style"], function() {
   server.init({
-    server: "_site",
+    server: "_app",
     notify: false,
     open: true,
     cors: true,

@@ -1,42 +1,37 @@
-$text-color: #444444;
-$black-text: #121212;
-$text-green: #68b738;
-$text-green--hover: #5eaa2f;
-$text-gray: #f2f2f2;
-$gray-line: #cfcfcf;
-
+$text-color: #444445;
+$main-p: #45414e;
+$light-b: #e8e1db;
+$dark-b: #ad9d8f;
+$light-g:#f2f3f7;
 $text-font: arial, helvetica, sans-serif;
-$oswald-font: "Oswald", arial, helvetica, sans-serif;
-$oswald-medium-font: "Oswald Medium", arial, helvetica, sans-serif;
-$tablet-width: 768px;
-$desktop-width: 1300px;
-$retina-dpi: 144dpi;
-$retina-dppx: 1.5dppx;
+$futurist-font: "Futuris-Cyrillic", arial, helvetica, sans-serif;
+$futurist-medium-font: "Futuris-Bold", arial, helvetica, sans-serif;
+// $tablet-width: 768px;
+// $desktop-width: 1300px;
+// $retina-dpi: 144dpi;
+// $retina-dppx: 1.5dppx;
 
 
 @mixin reset($padding: 0, $margin: 0) {
   padding: $padding;
   margin: $margin;
+  list-style: none;
 }
 
-@mixin desktop($padding: 40px, $width: 1300px) {
-  padding-left: $padding;
-  padding-right: $padding;
-  width: $width;
-}
+// @mixin desktop($padding: 40px, $width: 1300px) {
+//   padding-left: $padding;
+//   padding-right: $padding;
+//   width: $width;
+// }
 
-@mixin tablet($padding: 30px, $width: 768px) {
-  padding-left: $padding;
-  padding-right: $padding;
-  width: $width;
-}
+// @mixin tablet($padding: 30px, $width: 768px) {
+//   padding-left: $padding;
+//   padding-right: $padding;
+//   width: $width;
+// }
 
-@mixin mobile($padding: 20px, $width: 320px) {
-  padding-left: $padding;
-  padding-right: $padding;
-  width: $width;
-}
-
-@mixin element-color($color) {
-  background-image: url('data:image/svg+xml;utf8,<svg ...><g stroke="#{$color}" ... /></g></svg>');
-}
+// @mixin mobile($padding: 20px, $width: 320px) {
+//   padding-left: $padding;
+//   padding-right: $padding;
+//   width: $width;
+// }

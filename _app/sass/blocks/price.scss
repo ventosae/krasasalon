@@ -1,0 +1,52 @@
+.price__table {
+  display: grid;
+}
+
+.price__header {
+  @include reset;
+  justify-self: center;
+  font-size: 22px;
+  line-height: 30px;
+  font-family: $futurist-medium-font;
+  text-transform: capitalize;
+  padding-bottom: 18px;
+  padding-top: 18px;
+}
+
+.price__items {
+  @include reset;
+  display: grid;
+  grid-template-columns: 1fr;
+  color: white;
+
+}
+
+.price__item {
+  background-color: $dark-b;
+  padding-left: 0.909rem;
+  padding-right: 0.909rem;
+
+  &:nth-child(2n) {
+    background-color: $light-g;
+    color: $text-color;
+  }
+}
+
+.price__cost {
+  @include reset;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  font-size: 1.2857rem;
+  line-height: 1.2857rem;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+.price__service {
+  @include reset;
+  justify-self: start;
+}
+
+.price__product {
+  @include reset;
+}

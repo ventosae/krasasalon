@@ -1,15 +1,26 @@
+
+html {
+  font-size: 14px;
+}
+
+
 body {
   min-width: 320px;
   margin: 0;
   font-weight: 400;
-  font-size: 6px;
+  font-size: 14px;
   line-height: 22px;
-  font-family: $oswald-font;
+  font-family: $futurist-font;
   color: $text-color;
 }
 
-.main-intro__header {
-  color: rebeccapurple;
+section, header, footer {
+  grid-column: 1/-1;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
 }
 
 input,
@@ -41,4 +52,8 @@ html {
   border: 0;
   clip: rect(0 0 0 0);
   clip-path: inset(100%);
+}
+
+.menu-active {
+  overflow: hidden;
 }
