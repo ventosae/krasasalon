@@ -23,11 +23,11 @@
 
 .price__item {
   background-color: $dark-b;
-  padding-left: 0.909rem;
-  padding-right: 0.909rem;
+  padding-left: 1.4286rem;
+  padding-right: 1.4286rem;
 
   &:nth-child(2n) {
-    background-color: $light-g;
+    background-color: $light-b;
     color: $text-color;
   }
 }
@@ -45,6 +45,8 @@
 .price__service {
   @include reset;
   justify-self: start;
+  align-items: center;
+  display: flex;
 }
 
 .price__product {

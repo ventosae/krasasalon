@@ -317,8 +317,8 @@ template {
   display: none; }
 
 .container {
-  margin-left: 0.909rem;
-  margin-right: 0.909rem; }
+  margin-left: 1.4286rem;
+  margin-right: 1.4286rem; }
 
 html {
   font-size: 14px; }
@@ -444,6 +444,36 @@ html {
   height: 111px;
   fill: #ad9d8f; }
 
+.button {
+  display: grid;
+  margin-top: 25px;
+  margin-bottom: 25px;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  position: relative;
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 24px;
+  text-align: center;
+  color: white;
+  text-decoration: none;
+  background-color: #ad9d8f;
+  grid-template-columns: 1fr; }
+
+.button--book::after {
+  content: "";
+  position: absolute;
+  right: 0;
+  bottom: -58px;
+  left: 0;
+  height: 35px;
+  background-image: url(../img/corner-dark.svg);
+  background-repeat: no-repeat;
+  -webkit-transform: rotate(180deg);
+          transform: rotate(180deg);
+  z-index: 99;
+  fill: #f2f3f7; }
+
 .header {
   grid-column: 1/-1;
   display: grid; }
@@ -464,15 +494,17 @@ html {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: space-evenly;
-      -ms-flex-pack: space-evenly;
-          justify-content: space-evenly;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
   -ms-flex-line-pack: center;
       align-content: center;
-  min-height: 55px;
+  min-height: 3.9286rem;
   -webkit-box-align: center;
       -ms-flex-align: center;
-          align-items: center; }
+          align-items: center;
+  padding-left: 1.4286rem;
+  padding-right: 1.4286rem; }
 
 .header__number {
   padding: 0;
@@ -506,6 +538,14 @@ html {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between; }
+
+.ourwork__type {
+  font-size: 1.1429rem;
+  line-height: 1.2857rem;
+  padding-left: 55px; }
+
+.info {
+  background-color: #ddeee9; }
 
 .navigation__list {
   position: fixed;
@@ -557,6 +597,68 @@ html {
 .navigation--closed {
   display: none; }
 
+.ourwork {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  padding-top: 70px;
+  padding-bottom: 50px;
+  margin-left: 1.4286rem;
+  margin-right: 1.4286rem; }
+
+.ourwork__slides {
+  padding: 0;
+  margin: 0;
+  list-style: none; }
+
+.ourwork__maintitle {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  text-align: center;
+  font-size: 1.5714rem;
+  line-height: 2.1429rem;
+  font-family: "Futuris-Bold", arial, helvetica, sans-serif;
+  padding-bottom: 30px; }
+
+.ourwork__slide {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  display: grid;
+  grid-template-columns: 1fr;
+  border: 1px solid #444445;
+  margin-bottom: 50px;
+  /*temp*/
+  padding-left: 20px;
+  padding-right: 45px;
+  justify-items: start;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  grid-gap: 10px;
+  padding-bottom: 15px; }
+
+.ourwork__description {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  font-size: 18px; }
+
+.ourwork__type {
+  padding: 0;
+  margin: 0;
+  list-style: none; }
+
+.ourwork__image {
+  padding-top: 15px; }
+
+.ourwork__title {
+  font-size: 22px;
+  line-height: 27px;
+  font-style: normal;
+  font-weight: 600; }
+
 .page-main {
   display: grid;
   grid-template-rows: 140px auto;
@@ -588,10 +690,10 @@ html {
 
 .price__item {
   background-color: #ad9d8f;
-  padding-left: 0.909rem;
-  padding-right: 0.909rem; }
+  padding-left: 1.4286rem;
+  padding-right: 1.4286rem; }
   .price__item:nth-child(2n) {
-    background-color: #f2f3f7;
+    background-color: #e8e1db;
     color: #444445; }
 
 .price__cost {
@@ -609,7 +711,13 @@ html {
   padding: 0;
   margin: 0;
   list-style: none;
-  justify-self: start; }
+  justify-self: start;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex; }
 
 .price__product {
   padding: 0;
@@ -1233,13 +1341,13 @@ html {
    * Minus
    */
 .hamburger--minus .hamburger-inner::before, .hamburger--minus .hamburger-inner::after {
-  -webkit-transition: bottom 0.08s 0s ease-out, top 0.08s 0s ease-out, opacity 0s linear;
-  transition: bottom 0.08s 0s ease-out, top 0.08s 0s ease-out, opacity 0s linear; }
+  -webkit-transition: bottom 0.08s 0s ease-out, top 0.08s 0s ease-out, opacity 0s linear;
+  transition: bottom 0.08s 0s ease-out, top 0.08s 0s ease-out, opacity 0s linear; }
 
 .hamburger--minus.is-active .hamburger-inner::before, .hamburger--minus.is-active .hamburger-inner::after {
   opacity: 0;
-  -webkit-transition: bottom 0.08s ease-out, top 0.08s ease-out, opacity 0s 0.08s linear;
-  transition: bottom 0.08s ease-out, top 0.08s ease-out, opacity 0s 0.08s linear; }
+  -webkit-transition: bottom 0.08s ease-out, top 0.08s ease-out, opacity 0s 0.08s linear;
+  transition: bottom 0.08s ease-out, top 0.08s ease-out, opacity 0s 0.08s linear; }
 
 .hamburger--minus.is-active .hamburger-inner::before {
   top: 0; }
@@ -1314,8 +1422,8 @@ html {
   -webkit-transition-timing-function: cubic-bezier(0.55, 0.055, 0.675, 0.19);
           transition-timing-function: cubic-bezier(0.55, 0.055, 0.675, 0.19); }
   .hamburger--spin .hamburger-inner::before {
-    -webkit-transition: top 0.1s 0.25s ease-in, opacity 0.1s ease-in;
-    transition: top 0.1s 0.25s ease-in, opacity 0.1s ease-in; }
+    -webkit-transition: top 0.1s 0.25s ease-in, opacity 0.1s ease-in;
+    transition: top 0.1s 0.25s ease-in, opacity 0.1s ease-in; }
   .hamburger--spin .hamburger-inner::after {
     -webkit-transition: bottom 0.1s 0.25s ease-in, -webkit-transform 0.22s cubic-bezier(0.55, 0.055, 0.675, 0.19);
     transition: bottom 0.1s 0.25s ease-in, -webkit-transform 0.22s cubic-bezier(0.55, 0.055, 0.675, 0.19);
@@ -1332,8 +1440,8 @@ html {
   .hamburger--spin.is-active .hamburger-inner::before {
     top: 0;
     opacity: 0;
-    -webkit-transition: top 0.1s ease-out, opacity 0.1s 0.12s ease-out;
-    transition: top 0.1s ease-out, opacity 0.1s 0.12s ease-out; }
+    -webkit-transition: top 0.1s ease-out, opacity 0.1s 0.12s ease-out;
+    transition: top 0.1s ease-out, opacity 0.1s 0.12s ease-out; }
   .hamburger--spin.is-active .hamburger-inner::after {
     bottom: 0;
     -webkit-transform: rotate(-90deg);
@@ -1352,8 +1460,8 @@ html {
   -webkit-transition-timing-function: cubic-bezier(0.55, 0.055, 0.675, 0.19);
           transition-timing-function: cubic-bezier(0.55, 0.055, 0.675, 0.19); }
   .hamburger--spin-r .hamburger-inner::before {
-    -webkit-transition: top 0.1s 0.25s ease-in, opacity 0.1s ease-in;
-    transition: top 0.1s 0.25s ease-in, opacity 0.1s ease-in; }
+    -webkit-transition: top 0.1s 0.25s ease-in, opacity 0.1s ease-in;
+    transition: top 0.1s 0.25s ease-in, opacity 0.1s ease-in; }
   .hamburger--spin-r .hamburger-inner::after {
     -webkit-transition: bottom 0.1s 0.25s ease-in, -webkit-transform 0.22s cubic-bezier(0.55, 0.055, 0.675, 0.19);
     transition: bottom 0.1s 0.25s ease-in, -webkit-transform 0.22s cubic-bezier(0.55, 0.055, 0.675, 0.19);
@@ -1370,8 +1478,8 @@ html {
   .hamburger--spin-r.is-active .hamburger-inner::before {
     top: 0;
     opacity: 0;
-    -webkit-transition: top 0.1s ease-out, opacity 0.1s 0.12s ease-out;
-    transition: top 0.1s ease-out, opacity 0.1s 0.12s ease-out; }
+    -webkit-transition: top 0.1s ease-out, opacity 0.1s 0.12s ease-out;
+    transition: top 0.1s ease-out, opacity 0.1s 0.12s ease-out; }
   .hamburger--spin-r.is-active .hamburger-inner::after {
     bottom: 0;
     -webkit-transform: rotate(90deg);
@@ -1562,8 +1670,8 @@ html {
   -webkit-transition-timing-function: cubic-bezier(0.55, 0.055, 0.675, 0.19);
           transition-timing-function: cubic-bezier(0.55, 0.055, 0.675, 0.19); }
   .hamburger--squeeze .hamburger-inner::before {
-    -webkit-transition: top 0.075s 0.12s ease, opacity 0.075s ease;
-    transition: top 0.075s 0.12s ease, opacity 0.075s ease; }
+    -webkit-transition: top 0.075s 0.12s ease, opacity 0.075s ease;
+    transition: top 0.075s 0.12s ease, opacity 0.075s ease; }
   .hamburger--squeeze .hamburger-inner::after {
     -webkit-transition: bottom 0.075s 0.12s ease, -webkit-transform 0.075s cubic-bezier(0.55, 0.055, 0.675, 0.19);
     transition: bottom 0.075s 0.12s ease, -webkit-transform 0.075s cubic-bezier(0.55, 0.055, 0.675, 0.19);
@@ -1580,8 +1688,8 @@ html {
   .hamburger--squeeze.is-active .hamburger-inner::before {
     top: 0;
     opacity: 0;
-    -webkit-transition: top 0.075s ease, opacity 0.075s 0.12s ease;
-    transition: top 0.075s ease, opacity 0.075s 0.12s ease; }
+    -webkit-transition: top 0.075s ease, opacity 0.075s 0.12s ease;
+    transition: top 0.075s ease, opacity 0.075s 0.12s ease; }
   .hamburger--squeeze.is-active .hamburger-inner::after {
     bottom: 0;
     -webkit-transform: rotate(-90deg);

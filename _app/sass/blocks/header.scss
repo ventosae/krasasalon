@@ -17,10 +17,12 @@
   color: white;
   width: 80%;
   display: flex;
-  justify-content: space-evenly;
+  justify-content: space-between;
   align-content: center;
-  min-height: 55px;
+  min-height: 3.9286rem;
   align-items: center;
+  padding-left: 1.4286rem;
+  padding-right: 1.4286rem;
 }
 
 .header__number {
@@ -45,4 +47,10 @@
   display: flex;
   background-color: $light-b;
   justify-content: space-between;
+}
+
+.ourwork__type  {
+  font-size: 1.1429rem;
+  line-height: 1.2857rem;
+  padding-left: 55px;
 }

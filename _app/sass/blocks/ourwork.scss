@@ -1,0 +1,54 @@
+.ourwork {
+  @include reset;
+  padding-top: 70px;
+  padding-bottom: 50px;
+  margin-left: 1.4286rem;
+  margin-right: 1.4286rem;
+}
+
+.ourwork__slides {
+  @include reset;
+}
+
+.ourwork__maintitle {
+  @include reset;
+  text-align: center;
+  font-size: 1.5714rem;
+  line-height: 2.1429rem;
+  font-family: $futurist-medium-font;
+  padding-bottom: 30px;
+}
+
+.ourwork__slide {
+  @include reset;
+  display: grid;
+  grid-template-columns: 1fr;
+  border: 1px solid $text-color;
+  margin-bottom: 50px; /*temp*/
+  padding-left: 20px;
+  padding-right: 45px;
+  justify-items: start;
+  align-items: center;
+  grid-gap: 10px;
+  padding-bottom: 15px;
+}
+
+.ourwork__description {
+  @include reset;
+  font-size: 18px;
+}
+
+.ourwork__type {
+  @include reset;
+}
+
+.ourwork__image {
+  padding-top: 15px;
+}
+
+.ourwork__title {
+  font-size: 22px;
+  line-height: 27px;
+  font-style: normal;
+  font-weight: 600;
+}
