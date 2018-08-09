@@ -1,0 +1,80 @@
+.ourwork > ul> ol {
+  bottom: -30px;
+}
+
+.ourwork {
+  @include reset;
+  margin-right: 1.4286rem;
+  margin-left: 1.4286rem;
+  padding-top: 70px;
+}
+
+.ourwork__slides {
+  @include reset;
+}
+
+.ourwork__maintitle {
+  @include reset;
+  padding-bottom: 30px;
+
+  font-size: 1.5714rem;
+  line-height: 2.1429rem;
+  font-family: $futurist-medium-font;
+  text-align: center;
+}
+
+.ourwork__slide {
+  @include reset;
+  display: grid;
+  align-items: center;
+  width: 100%;
+  min-height: 386px;
+  padding-right: 45px;
+  padding-bottom: 15px;
+  padding-left: 20px;
+
+
+  border: 1px solid $text-color;
+
+  grid-gap: 10px;
+  grid-template-columns: 1fr;
+
+  justify-items: start;
+}
+
+.ourwork__description {
+  @include reset;
+  font-size: 18px;
+}
+
+.ourwork__image {
+  padding-top: 15px;
+}
+
+.ourwork__title {
+  font-weight: 600;
+  font-size: 22px;
+  line-height: 27px;
+  font-style: normal;
+}
+
+.ourwork__type {
+  @include reset;
+  position: relative;
+
+  width: 39%;
+  padding-left: 70px;
+}
+
+.ourwork__manic::before {
+  content: "";
+  position: absolute;
+  left: 25px;
+  z-index: 99;
+
+  width: 42px;
+  height: 42px;
+
+  background-image: url("../img/ideal.svg");
+  background-repeat: no-repeat;
+}

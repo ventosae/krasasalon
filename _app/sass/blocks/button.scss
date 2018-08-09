@@ -1,0 +1,32 @@
+.button {
+  display: grid;
+  margin-top: 25px;
+  margin-bottom: 25px;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  position: relative;
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 24px;
+  text-align: center;
+  color: white;
+  text-decoration: none;
+
+  background-color: $dark-b;
+
+  grid-template-columns: 1fr;
+}
+
+.button--book::after {
+  content: "";
+  position: absolute;
+  right: 0;
+  bottom: -58px;
+  left: 0;
+  height: 35px;
+  background-image: url(../img/corner-dark.svg);
+  background-repeat: no-repeat;
+  transform: rotate(180deg);
+  z-index: 99;
+  fill: #f2f3f7;
+}

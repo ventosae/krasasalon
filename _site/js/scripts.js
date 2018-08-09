@@ -1,1 +1,1 @@
-var elem=document.querySelector(".main-carousel"),flkty=new Flickity(elem,{cellAlign:"left",contain:!0});flkty=new Flickity(".main-carousel",{});
+var elem=document.querySelector(".main-carousel"),flkty=new Flickity(elem,{cellAlign:"left",contain:!0});flkty=new Flickity(".main-carousel",{}),elem=document.querySelector(".main-carousel1"),flkty=new Flickity(elem,{cellAlign:"left",contain:!0,prevNextButtons:!1}),flkty=new Flickity(".main-carousel1",{});
