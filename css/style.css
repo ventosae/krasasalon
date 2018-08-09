@@ -545,7 +545,22 @@ html {
   padding-left: 55px; }
 
 .info {
-  background-color: #ddeee9; }
+  background-color: #ddeee9;
+  position: relative; }
+
+.info::after {
+  content: "";
+  position: absolute;
+  right: 0;
+  bottom: -34px;
+  left: 0;
+  height: 35px;
+  background-image: url(../img/corner-light.svg);
+  background-repeat: no-repeat;
+  -webkit-transform: rotate(180deg);
+  transform: rotate(180deg);
+  z-index: 99;
+  width: 100%; }
 
 .navigation__list {
   position: fixed;
@@ -597,10 +612,13 @@ html {
 .navigation--closed {
   display: none; }
 
+.ourteam > ul > ol {
+  bottom: -30px; }
+
 .ourteam {
   margin-right: 1.4286rem;
   margin-left: 1.4286rem;
-  padding-top: 3.5714rem;
+  padding-top: 3.9286rem;
   padding-bottom: 3.5714rem; }
 
 .ourteam__maintitle {
@@ -622,20 +640,25 @@ html {
       -ms-flex-align: center;
           align-items: center;
   width: 100%;
-  min-height: 386px;
+  min-height: 105px;
   padding-right: 45px;
   padding-bottom: 15px;
   padding-left: 20px;
-  border: 1px solid #444445;
-  grid-gap: 10px;
-  grid-template-columns: 1fr;
+  grid-auto-flow: row;
+  grid-template-columns: 3.5714rem 15rem;
   padding: 0;
   margin: 0;
   list-style: none;
-  justify-items: start; }
+  justify-items: start;
+  grid-template-rows: 1fr 3fr;
+  -webkit-column-gap: 20px;
+          column-gap: 20px; }
 
 .ourteam__description {
-  font-size: 18px;
+  font-size: 1.2857rem;
+  grid-column-start: 2;
+  grid-column-end: 4;
+  line-height: 1.2857rem;
   padding: 0;
   margin: 0;
   list-style: none; }
@@ -647,28 +670,21 @@ html {
   list-style: none; }
 
 .ourteam__image {
-  padding-top: 15px; }
+  grid-row: span 2;
+  justify-self: end;
+  -ms-flex-item-align: start;
+      align-self: start;
+  padding-top: 5px; }
 
 .ourteam__title {
   font-weight: 600;
   font-size: 22px;
   line-height: 27px;
-  font-style: normal; }
-
-.ourteam__type {
-  position: relative;
-  width: 50%;
-  padding-left: 70px; }
-
-.ourteam__manic::before {
-  content: "";
-  position: absolute;
-  left: 25px;
-  z-index: 99;
-  width: 42px;
-  height: 42px;
-  background-image: url("../img/ideal.svg");
-  background-repeat: no-repeat; }
+  font-style: normal;
+  grid-column-start: 2;
+  grid-column-end: 4;
+  margin: 0;
+  padding: 0; }
 
 .ourwork > ul > ol {
   bottom: -30px; }
