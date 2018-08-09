@@ -1,9 +1,12 @@
+.ourwork > ul> ol {
+  bottom: -30px;
+}
+
 .ourwork {
   @include reset;
-  padding-top: 70px;
-  padding-bottom: 50px;
-  margin-left: 1.4286rem;
   margin-right: 1.4286rem;
+  margin-left: 1.4286rem;
+  padding-top: 70px;
 }
 
 .ourwork__slides {
@@ -12,25 +15,31 @@
 
 .ourwork__maintitle {
   @include reset;
-  text-align: center;
+  padding-bottom: 30px;
+
   font-size: 1.5714rem;
   line-height: 2.1429rem;
   font-family: $futurist-medium-font;
-  padding-bottom: 30px;
+  text-align: center;
 }
 
 .ourwork__slide {
   @include reset;
   display: grid;
-  grid-template-columns: 1fr;
-  border: 1px solid $text-color;
-  margin-bottom: 50px; /*temp*/
-  padding-left: 20px;
-  padding-right: 45px;
-  justify-items: start;
   align-items: center;
-  grid-gap: 10px;
+  width: 100%;
+  min-height: 386px;
+  padding-right: 45px;
   padding-bottom: 15px;
+  padding-left: 20px;
+
+
+  border: 1px solid $text-color;
+
+  grid-gap: 10px;
+  grid-template-columns: 1fr;
+
+  justify-items: start;
 }
 
 .ourwork__description {
@@ -38,17 +47,34 @@
   font-size: 18px;
 }
 
-.ourwork__type {
-  @include reset;
-}
-
 .ourwork__image {
   padding-top: 15px;
 }
 
 .ourwork__title {
+  font-weight: 600;
   font-size: 22px;
   line-height: 27px;
   font-style: normal;
-  font-weight: 600;
+}
+
+.ourwork__type {
+  @include reset;
+  position: relative;
+
+  width: 39%;
+  padding-left: 70px;
+}
+
+.ourwork__manic::before {
+  content: "";
+  position: absolute;
+  left: 25px;
+  z-index: 99;
+
+  width: 42px;
+  height: 42px;
+
+  background-image: url("../img/ideal.svg");
+  background-repeat: no-repeat;
 }
