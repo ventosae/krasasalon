@@ -1,3 +1,8 @@
+.benefits {
+  grid-area: benefits;
+  background-color: $light-g;
+}
+
 .benefits_radio {
   display: none;
 }
@@ -8,6 +13,7 @@
   background-color: $light-g;
 
   grid-gap: 1.563rem;
+
   @include reset;
 }
 

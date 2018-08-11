@@ -1,7 +1,7 @@
 .header {
-  // grid-area: header;
   grid-column: 1/-1;
   display: grid;
+  grid-area: header;
 }
 
 .header__logo {
@@ -49,8 +49,27 @@
   justify-content: space-between;
 }
 
-.ourwork__type  {
+.ourwork__type {
   font-size: 1.1429rem;
   line-height: 1.2857rem;
   padding-left: 55px;
+}
+
+.header__instagram,
+.header__facebook
+{
+  &:hover {
+    transition: opacity 0.2s linear;
+    opacity: 0.8;
+  }
+
+  &:active {
+    transition: opacity 0.2s linear;
+    opacity: 0.8;
+  }
+
+  &:focus {
+    transition: opacity 0.2s linear;
+    opacity: 0.6;
+  }
 }

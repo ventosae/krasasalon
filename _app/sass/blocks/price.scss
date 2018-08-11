@@ -1,3 +1,9 @@
+.price {
+  grid-area: price;
+  background-color: $light-g;
+  position: relative;
+}
+
 .price__table {
   display: grid;
 }
@@ -18,7 +24,6 @@
   display: grid;
   grid-template-columns: 1fr;
   color: white;
-
 }
 
 .price__item {
@@ -51,4 +56,18 @@
 
 .price__product {
   @include reset;
+}
+
+.price::after {
+  content: "";
+  position: absolute;
+  right: 0;
+  bottom: -34px;
+  left: 0;
+  height: 35px;
+  background-image: url("../img/corner-dark.svg");
+  background-repeat: no-repeat;
+  transform: rotate(180deg);
+  z-index: 99;
+  fill: #f2f3f7;
 }

@@ -1,6 +1,7 @@
 .info {
   background-color: $green;
   position: relative;
+  grid-area: info;
 }
 
 .info::after {
@@ -10,9 +11,8 @@
   bottom: -34px;
   left: 0;
   height: 35px;
-  background-image: url(../img/corner-light.svg);
+  background-image: url("../img/corner-light.svg");
   background-repeat: no-repeat;
-  -webkit-transform: rotate(180deg);
   transform: rotate(180deg);
   z-index: 99;
   width: 100%;

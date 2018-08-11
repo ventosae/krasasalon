@@ -1,0 +1,138 @@
+.footer {
+  background-color: $main-p;
+  grid-area: footer;
+}
+
+.footer__cpa {
+  font-size: 1.2857rem;
+  line-height: 1.9286rem;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  margin: 0 auto;
+  width: 85%;
+  padding: 0;
+  color: white;
+  padding-top: 75px;
+}
+
+.footer__phone {
+  display: grid;
+  margin-top: 1.7857rem;
+  margin-bottom: 1.7857rem;
+  padding-top: 1.0714rem;
+  padding-bottom: 1.0714rem;
+  position: relative;
+  font-weight: 700;
+  font-size: 1.2857rem;
+  line-height: 1.7143rem;
+  text-align: center;
+  color: #ffffff;
+  text-decoration: none;
+  grid-template-columns: 1fr;
+  border: 2px solid $light-g;
+
+  &:hover {
+    transition: opacity 0.2s linear, color 0.2s linear, border 0.2s linear;
+    border: 2px solid $light-go;
+  }
+
+  &:active {
+    transition: opacity 0.2s linear, color 0.2s linear;
+    opacity: 0.8;
+  }
+
+  &:focus {
+    transition: opacity 0.2s linear, color 0.2s linear;
+    opacity: 0.6;
+  }
+}
+
+.footer__image--fb {
+  width: 18px;
+  height: 39px;
+}
+
+.footer__social {
+  padding: 0;
+  margin: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 75px;
+}
+
+.footer__image--gram {
+  width: 36px;
+  height: 36px;
+}
+
+.footer__items {
+  height: 105px;
+  width: 105px;
+  display: flex;
+  justify-self: center;
+  border: 2px solid #f2f3f7;
+  justify-content: center;
+  align-content: center;
+  align-items: center;
+
+  &:nth-child(1) {
+    margin-right: -1px;
+  }
+
+  &:nth-child(2) {
+    margin-left: -1px;
+  }
+
+  &:hover {
+    transition: opacity 0.2s linear, color 0.2s linear, border 0.2s linear;
+    border: 2px solid $light-go;
+    opacity: 0.8;
+  }
+
+  &:active {
+    transition: opacity 0.2s linear, color 0.2s linear;
+    opacity: 0.8;
+  }
+
+  &:focus {
+    transition: opacity 0.2s linear, color 0.2s linear;
+    opacity: 0.6;
+  }
+}
+
+.footer__link {
+  display: flex;
+}
+
+.footer__up {
+  display: grid;
+  margin-bottom: 1.7857rem;
+  padding-top: 1.0714rem;
+  padding-bottom: 1.0714rem;
+  position: relative;
+  font-weight: 700;
+  font-size: 1.2857rem;
+  line-height: 1.7143rem;
+  text-align: center;
+  color: #ffffff;
+  text-decoration: none;
+  grid-template-columns: 1fr;
+  border: 2px solid $light-go;
+
+  &:hover {
+    transition: opacity 0.2s linear;
+    opacity: 0.8;
+  }
+
+  &:active {
+    transition: opacity 0.2s linear;
+    opacity: 0.8;
+  }
+
+  &:focus {
+    transition: opacity 0.2s linear;
+    opacity: 0.6;
+  }
+}

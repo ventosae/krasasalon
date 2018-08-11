@@ -15,18 +15,20 @@
   background-color: $dark-b;
 
   grid-template-columns: 1fr;
+
+  &:hover {
+    transition: opacity 0.2s linear, color 0.2s linear;
+    opacity: 0.8;
+  }
+
+  &:active {
+    transition: opacity 0.2s linear, color 0.2s linear;
+    opacity: 0.8;
+  }
+
+  &:focus {
+    transition: opacity 0.2s linear, color 0.2s linear;
+    opacity: 0.6;
+   }
 }
 
-.button--book::after {
-  content: "";
-  position: absolute;
-  right: 0;
-  bottom: -58px;
-  left: 0;
-  height: 35px;
-  background-image: url(../img/corner-dark.svg);
-  background-repeat: no-repeat;
-  transform: rotate(180deg);
-  z-index: 99;
-  fill: #f2f3f7;
-}
