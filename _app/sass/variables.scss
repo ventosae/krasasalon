@@ -26,11 +26,10 @@ $futurist-medium-font: "Futuris-Bold", arial, helvetica, sans-serif;
 //   width: $width;
 // }
 
-// @mixin tablet($padding: 30px, $width: 768px) {
-//   padding-left: $padding;
-//   padding-right: $padding;
-//   width: $width;
-// }
+@mixin tablet($padding: 4.6429rem) {
+  padding-left: $padding;
+  padding-right: $padding;
+}
 
 // @mixin mobile($padding: 20px, $width: 320px) {
 //   padding-left: $padding;

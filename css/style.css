@@ -319,6 +319,10 @@ template {
 .container {
   margin-left: 1.4286rem;
   margin-right: 1.4286rem; }
+  @media only screen and (min-width: 768px) {
+    .container {
+      margin-left: 4.6429rem;
+      margin-right: 4.6429rem; } }
 
 html {
   font-size: 14px;
@@ -377,6 +381,14 @@ html {
   grid-gap: 1.071em;
   justify-items: center;
   grid-area: about; }
+  @media only screen and (min-width: 768px) {
+    .about {
+      margin-top: -151px;
+      background-color: white;
+      grid-auto-flow: column;
+      -webkit-box-align: center;
+          -ms-flex-align: center;
+              align-items: center; } }
 
 .about__header {
   padding: 0;
@@ -618,17 +630,41 @@ html {
 .header {
   grid-column: 1/-1;
   display: grid;
-  grid-area: header; }
+  grid-area: header;
+  grid-template-areas: "logo" "navigation"; }
+  @media only screen and (min-width: 768px) {
+    .header {
+      grid-template-areas: "navigation" "logo"; } }
 
 .header__logo {
   background-color: #45414e;
   height: 6.1em;
   justify-items: center;
-  display: inherit;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  padding-top: 15px; }
+  padding-top: 15px;
+  grid-area: logo;
+  display: grid;
+  width: 100%; }
+  @media only screen and (min-width: 768px) {
+    .header__logo {
+      height: 400px;
+      background-color: transparent;
+      background-image: url("../img/main-bg.jpg");
+      background-size: 1200px auto;
+      background-position: center bottom 28%;
+      -webkit-box-align: start;
+          -ms-flex-align: start;
+              align-items: start;
+      padding-top: 35px;
+      background-color: #f8bcc4;
+      background-repeat: no-repeat; } }
+
+@media only screen and (min-width: 768px) {
+  .header__picture {
+    width: 203px;
+    height: 161px; } }
 
 .header__mobile-info {
   color: white;
@@ -680,6 +716,9 @@ html {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between; }
+  @media only screen and (min-width: 768px) {
+    .header__mobile-wrapper {
+      display: none; } }
 
 .ourwork__type {
   font-size: 1.1429rem;
@@ -723,6 +762,13 @@ html {
   z-index: 99;
   width: 100%; }
 
+.navigation {
+  display: grid;
+  grid-area: navigation; }
+  @media only screen and (min-width: 768px) {
+    .navigation {
+      background-color: #45414e; } }
+
 .navigation__list {
   position: fixed;
   top: 0;
@@ -731,12 +777,17 @@ html {
   width: 100%;
   height: 100vh;
   margin-top: 16.3vh;
-  overflow-x: hidden;
   background: #e8e1db;
   -webkit-transition: 0.5s;
   transition: 0.5s;
   -webkit-transition-delay: 0.5s;
           transition-delay: 0.5s; }
+  @media only screen and (min-width: 768px) {
+    .navigation__list {
+      position: relative;
+      height: auto;
+      margin-top: 0;
+      background-color: #45414e; } }
 
 .navigation__items {
   display: grid;
@@ -746,6 +797,16 @@ html {
   padding: 0;
   margin: 0;
   list-style: none; }
+  @media only screen and (min-width: 768px) {
+    .navigation__items {
+      padding-left: 4.6429rem;
+      padding-right: 4.6429rem;
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-pack: justify;
+          -ms-flex-pack: justify;
+              justify-content: space-between; } }
 
 .navigation__item {
   padding: 20px;
@@ -758,6 +819,21 @@ html {
     opacity: 0.5;
     -webkit-transition: opacity 0.2s linear, color 0.2s linear;
     transition: opacity 0.2s linear, color 0.2s linear; }
+  @media only screen and (min-width: 768px) {
+    .navigation__item {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      background-color: #45414e;
+      -webkit-box-pack: stretch;
+          -ms-flex-pack: stretch;
+              justify-content: stretch;
+      padding: 0;
+      padding-top: 23px;
+      padding-bottom: 23px;
+      -webkit-box-align: center;
+          -ms-flex-align: center;
+              align-items: center; } }
 
 .navigation__item--active {
   display: grid;
@@ -773,38 +849,53 @@ html {
 
 .navigation--closed {
   display: none; }
+  @media only screen and (min-width: 768px) {
+    .navigation--closed {
+      display: block; } }
 
 .navigation__link {
+  position: relative;
   color: white;
   text-decoration: none;
-  position: relative;
   -webkit-transition: background-color 0.2s linear, border-color 0.2s linear, color 0.2s linear;
   transition: background-color 0.2s linear, border-color 0.2s linear, color 0.2s linear; }
+  .navigation__link:focus {
+    outline: none;
+    background-color: transparent;
+    -webkit-user-select: none;
+       -moz-user-select: none;
+        -ms-user-select: none;
+            user-select: none; }
+  @media only screen and (min-width: 768px) {
+    .navigation__link {
+      font-size: 1.2857rem;
+      line-height: 1.7143rem;
+      font-weight: 500; } }
 
 .navigation__item a[href]::after {
   content: "";
   position: absolute;
-  width: 100%;
-  height: 3px;
   bottom: -3px;
   left: 0;
+  width: 100%;
+  height: 3px;
   background: #ffffff;
-  visibility: visible;
   border-radius: 5px;
   -webkit-transform: scaleX(0);
           transform: scaleX(0);
-  -webkit-transition: .25s linear;
-  transition: .25s linear; }
+  visibility: visible;
+  -webkit-transition: 0.25s linear;
+  transition: 0.25s linear; }
 
 .navigation__item a[href]:hover::after {
-  visibility: visible;
   -webkit-transform: scaleX(1);
-          transform: scaleX(1); }
+          transform: scaleX(1);
+  visibility: visible; }
 
 .navigation__item a[href]:focus::after {
-  visibility: visible;
   -webkit-transform: scaleX(1);
-          transform: scaleX(1); }
+          transform: scaleX(1);
+  visibility: visible; }
 
 .ourteam > ul > ol {
   bottom: -2.1429rem; }
@@ -963,6 +1054,10 @@ html {
   margin-left: auto;
   margin-right: auto;
   grid-template-areas: "header" "about" "benefits" "price" "info" "footer"; }
+  @media only screen and (min-width: 768px) {
+    .page-main {
+      grid-template-areas: "header" "about" "price" "benefits" "info" "footer";
+      grid-template-rows: auto; } }
 
 .price {
   grid-area: price;
@@ -983,6 +1078,9 @@ html {
   text-transform: capitalize;
   padding-bottom: 18px;
   padding-top: 18px; }
+  @media only screen and (min-width: 768px) {
+    .price__header {
+      display: none; } }
 
 .price__items {
   padding: 0;

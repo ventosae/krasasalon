@@ -11,4 +11,16 @@
     "price"
     "info"
     "footer";
+
+  @media only screen and (min-width: 768px) {
+    grid-template-areas:
+    "header"
+    "about"
+    "price"
+    "benefits"
+    "info"
+    "footer";
+
+    grid-template-rows: auto;
+  }
 }

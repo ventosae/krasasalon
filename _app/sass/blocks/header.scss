@@ -2,15 +2,46 @@
   grid-column: 1/-1;
   display: grid;
   grid-area: header;
+  grid-template-areas:
+  "logo"
+  "navigation";
+
+
+  @media only screen and (min-width: 768px) {
+    grid-template-areas:
+    "navigation"
+    "logo";
+  }
 }
 
 .header__logo {
   background-color: $main-p;
   height: 6.1em;
   justify-items: center;
-  display: inherit;
   align-items: center;
   padding-top: 15px;
+  grid-area: logo;
+  display: grid;
+  width: 100%;
+
+  @media only screen and (min-width: 768px) {
+    height: 400px;
+    background-color: transparent;
+    background-image: url("../img/main-bg.jpg");
+    background-size: 1200px auto;
+    background-position: center bottom 28%;
+    align-items: start;
+    padding-top: 35px;
+    background-color: #f8bcc4;
+    background-repeat: no-repeat;
+  }
+}
+
+.header__picture {
+  @media only screen and (min-width: 768px) {
+    width: 203px;
+    height: 161px;
+  }
 }
 
 .header__mobile-info {
@@ -47,6 +78,10 @@
   display: flex;
   background-color: $light-b;
   justify-content: space-between;
+
+  @media only screen and (min-width: 768px) {
+    display: none;
+  }
 }
 
 .ourwork__type {
@@ -56,8 +91,7 @@
 }
 
 .header__instagram,
-.header__facebook
-{
+.header__facebook {
   &:hover {
     transition: opacity 0.2s linear;
     opacity: 0.8;
