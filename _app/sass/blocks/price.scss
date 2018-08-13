@@ -1,3 +1,13 @@
+.price {
+  grid-area: price;
+  background-color: $light-g;
+  position: relative;
+
+  @media only screen and (min-width: 768px){
+    @include tablet;
+  }
+}
+
 .price__table {
   display: grid;
 }
@@ -11,6 +21,12 @@
   text-transform: capitalize;
   padding-bottom: 18px;
   padding-top: 18px;
+
+  &--first {
+    @media only screen and (min-width: 768px) {
+      display: none;
+    }
+  }
 }
 
 .price__items {
@@ -19,6 +35,9 @@
   grid-template-columns: 1fr;
   color: white;
 
+  @media only screen and (min-width: 768px) {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
 }
 
 .price__item {
@@ -26,10 +45,20 @@
   padding-left: 1.4286rem;
   padding-right: 1.4286rem;
 
-  &:nth-child(2n) {
-    background-color: $light-b;
-    color: $text-color;
+  @media only screen and (max-width: 768px) {
+    &:nth-child(2n) {
+      background-color: $light-b;
+      color: $text-color;
+    }
   }
+
+  @media only screen and (min-width: 768px) {
+    &:nth-child(3n-1) {
+      background-color: $light-b;
+      color: $text-color;
+    }
+  }
+
 }
 
 .price__cost {
@@ -40,6 +69,10 @@
   line-height: 1.2857rem;
   padding-top: 20px;
   padding-bottom: 20px;
+
+  @media only screen and (min-width: 768px) {
+    grid-template-columns: 1fr;
+  }
 }
 
 .price__service {
@@ -51,4 +84,18 @@
 
 .price__product {
   @include reset;
+}
+
+.price::after {
+  content: "";
+  position: absolute;
+  right: 0;
+  bottom: -34px;
+  left: 0;
+  height: 35px;
+  background-image: url("../img/corner-dark.svg");
+  background-repeat: no-repeat;
+  transform: rotate(180deg);
+  z-index: 99;
+  fill: #f2f3f7;
 }

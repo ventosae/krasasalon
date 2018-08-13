@@ -23,3 +23,17 @@ var flkty = new Flickity( elem, {
 var flkty = new Flickity( '.main-carousel1', {
   // options
 });
+
+var elem = document.querySelector('.main-carousel2');
+var flkty = new Flickity( elem, {
+  // options
+  cellAlign: 'left',
+  contain: true,
+  prevNextButtons: false
+});
+
+// element argument can be a selector string
+//   for an individual element
+var flkty = new Flickity( '.main-carousel2', {
+  // options
+});

@@ -1,3 +1,19 @@
 .info {
-  background-color: #ddeee9;
+  background-color: $green;
+  position: relative;
+  grid-area: info;
+}
+
+.info::after {
+  content: "";
+  position: absolute;
+  right: 0;
+  bottom: -34px;
+  left: 0;
+  height: 35px;
+  background-image: url("../img/corner-light.svg");
+  background-repeat: no-repeat;
+  transform: rotate(180deg);
+  z-index: 99;
+  width: 100%;
 }
