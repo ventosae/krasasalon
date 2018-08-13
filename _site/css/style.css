@@ -383,12 +383,23 @@ html {
   grid-area: about; }
   @media only screen and (min-width: 768px) {
     .about {
-      margin-top: -151px;
+      margin-top: -185px;
       background-color: white;
       grid-auto-flow: column;
       -webkit-box-align: center;
           -ms-flex-align: center;
-              align-items: center; } }
+              align-items: center;
+      padding: 3.3571rem 2.1429rem;
+      position: relative; }
+      .about::after {
+        content: "";
+        position: absolute;
+        top: 35px;
+        left: -15px;
+        border: 15px solid transparent;
+        border-bottom-color: #ffffff;
+        -webkit-transform: rotate(45deg);
+                transform: rotate(45deg); } }
 
 .about__header {
   padding: 0;
@@ -400,6 +411,11 @@ html {
   text-align: center;
   width: 80%;
   padding-top: 1.071em; }
+  @media only screen and (min-width: 768px) {
+    .about__header {
+      line-height: 2.1429rem;
+      font-size: 1.8571rem;
+      padding: 0; } }
 
 .about__description {
   padding: 0;
@@ -408,6 +424,12 @@ html {
   line-height: 1.2857rem;
   text-align: center;
   margin-bottom: 1.2857rem; }
+  @media only screen and (min-width: 768px) {
+    .about__description {
+      line-height: 1.2857rem;
+      font-size: 1.2857rem;
+      padding: 0;
+      margin-bottom: 0; } }
 
 .benefits {
   grid-area: benefits;
@@ -1063,6 +1085,10 @@ html {
   grid-area: price;
   background-color: #f2f3f7;
   position: relative; }
+  @media only screen and (min-width: 768px) {
+    .price {
+      padding-left: 4.6429rem;
+      padding-right: 4.6429rem; } }
 
 .price__table {
   display: grid; }
@@ -1079,7 +1105,7 @@ html {
   padding-bottom: 18px;
   padding-top: 18px; }
   @media only screen and (min-width: 768px) {
-    .price__header {
+    .price__header--first {
       display: none; } }
 
 .price__items {
@@ -1089,14 +1115,22 @@ html {
   display: grid;
   grid-template-columns: 1fr;
   color: white; }
+  @media only screen and (min-width: 768px) {
+    .price__items {
+      grid-template-columns: 1fr 1fr 1fr; } }
 
 .price__item {
   background-color: #ad9d8f;
   padding-left: 1.4286rem;
   padding-right: 1.4286rem; }
-  .price__item:nth-child(2n) {
-    background-color: #e8e1db;
-    color: #444445; }
+  @media only screen and (max-width: 768px) {
+    .price__item:nth-child(2n) {
+      background-color: #e8e1db;
+      color: #444445; } }
+  @media only screen and (min-width: 768px) {
+    .price__item:nth-child(3n-1) {
+      background-color: #e8e1db;
+      color: #444445; } }
 
 .price__cost {
   padding: 0;
@@ -1108,6 +1142,9 @@ html {
   line-height: 1.2857rem;
   padding-top: 20px;
   padding-bottom: 20px; }
+  @media only screen and (min-width: 768px) {
+    .price__cost {
+      grid-template-columns: 1fr; } }
 
 .price__service {
   padding: 0;

@@ -5,10 +5,22 @@
   grid-area: about;
 
   @media only screen and (min-width: 768px) {
-    margin-top: -151px;
+    margin-top: -185px;
     background-color: white;
     grid-auto-flow: column;
     align-items: center;
+    padding: 3.3571rem 2.1429rem;
+    position: relative;
+
+    &::after {
+      content: "";
+      position: absolute;
+      top: 35px;
+      left: -15px;
+      border: 15px solid transparent;
+      border-bottom-color: #ffffff;
+      transform: rotate(45deg);
+    }
   }
 }
 
@@ -20,6 +32,12 @@
   text-align: center;
   width: 80%;
   padding-top: 1.071em;
+
+  @media only screen and (min-width: 768px) {
+    line-height: 2.1429rem;
+    font-size: 1.8571rem;
+    padding: 0;
+  }
 }
 
 .about__description {
@@ -27,4 +45,12 @@
   line-height: 1.2857rem;
   text-align: center;
   margin-bottom: 1.2857rem;
+
+  @media only screen and (min-width: 768px) {
+    line-height: 1.2857rem;
+    font-size: 1.2857rem;
+    padding: 0;
+    margin-bottom: 0;
+  }
+
 }
