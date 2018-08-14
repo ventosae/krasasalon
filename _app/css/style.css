@@ -512,6 +512,17 @@ html {
     -webkit-transition: opacity 0.2s linear, color 0.2s linear;
     transition: opacity 0.2s linear, color 0.2s linear;
     opacity: 0.6; }
+  @media only screen and (min-width: 768px) {
+    .button {
+      padding-top: 20px;
+      padding-bottom: 20px;
+      font-weight: bold;
+      font-size: 24px;
+      line-height: 24px;
+      text-align: center;
+      margin-left: 160px;
+      margin-right: 160px;
+      text-transform: uppercase; } }
 
 .footer {
   background-color: #45414e;
@@ -653,10 +664,10 @@ html {
   grid-column: 1/-1;
   display: grid;
   grid-area: header;
-  grid-template-areas: "logo" "navigation"; }
+  grid-template-areas: "logo" "navigation"; }
   @media only screen and (min-width: 768px) {
     .header {
-      grid-template-areas: "navigation" "logo"; } }
+      grid-template-areas: "navigation" "logo"; } }
 
 .header__logo {
   background-color: #45414e;
@@ -1075,10 +1086,10 @@ html {
   grid-template-rows: 140px auto;
   margin-left: auto;
   margin-right: auto;
-  grid-template-areas: "header" "about" "benefits" "price" "info" "footer"; }
+  grid-template-areas: "header" "about" "benefits" "price" "info" "footer"; }
   @media only screen and (min-width: 768px) {
     .page-main {
-      grid-template-areas: "header" "about" "price" "benefits" "info" "footer";
+      grid-template-areas: "header" "about" "price" "benefits" "info" "footer";
       grid-template-rows: auto; } }
 
 .price {
@@ -1107,6 +1118,11 @@ html {
   @media only screen and (min-width: 768px) {
     .price__header--first {
       display: none; } }
+  @media only screen and (min-width: 768px) {
+    .price__header {
+      font-size: 30px;
+      line-height: 18px;
+      justify-self: start; } }
 
 .price__items {
   padding: 0;
@@ -1123,7 +1139,7 @@ html {
   background-color: #ad9d8f;
   padding-left: 1.4286rem;
   padding-right: 1.4286rem; }
-  @media only screen and (max-width: 768px) {
+  @media only screen and (max-width: 767px) {
     .price__item:nth-child(2n) {
       background-color: #e8e1db;
       color: #444445; } }
@@ -1131,6 +1147,13 @@ html {
     .price__item:nth-child(3n-1) {
       background-color: #e8e1db;
       color: #444445; } }
+  @media only screen and (min-width: 768px) {
+    .price__item {
+      -webkit-box-align: center;
+          -ms-flex-align: center;
+              align-items: center;
+      display: grid;
+      min-height: 7.6429rem; } }
 
 .price__cost {
   padding: 0;
@@ -1140,11 +1163,14 @@ html {
   grid-template-columns: 1fr 1fr;
   font-size: 1.2857rem;
   line-height: 1.2857rem;
-  padding-top: 20px;
-  padding-bottom: 20px; }
+  padding-top: 1.4286rem;
+  padding-bottom: 1.4286rem; }
   @media only screen and (min-width: 768px) {
     .price__cost {
-      grid-template-columns: 1fr; } }
+      grid-template-columns: 1fr;
+      padding-top: 0.9286rem;
+      padding-bottom: 0.9286rem;
+      grid-gap: 0.7143rem; } }
 
 .price__service {
   padding: 0;
@@ -1157,11 +1183,22 @@ html {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex; }
+  @media only screen and (min-width: 768px) {
+    .price__service {
+      font-size: 2.1429rem;
+      line-height: 1.7143rem;
+      justify-self: center; } }
 
 .price__product {
   padding: 0;
   margin: 0;
   list-style: none; }
+  @media only screen and (min-width: 768px) {
+    .price__product {
+      font-size: 22px;
+      line-height: 1.7143rem;
+      justify-self: center;
+      text-align: center; } }
 
 .price::after {
   content: "";

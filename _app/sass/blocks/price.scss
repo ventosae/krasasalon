@@ -27,6 +27,12 @@
       display: none;
     }
   }
+
+  @media only screen and (min-width: 768px){
+    font-size: 30px;
+    line-height: 18px;
+    justify-self: start;
+  }
 }
 
 .price__items {
@@ -45,7 +51,7 @@
   padding-left: 1.4286rem;
   padding-right: 1.4286rem;
 
-  @media only screen and (max-width: 768px) {
+  @media only screen and (max-width: 767px) {
     &:nth-child(2n) {
       background-color: $light-b;
       color: $text-color;
@@ -59,6 +65,11 @@
     }
   }
 
+  @media only screen and (min-width: 768px) {
+    align-items: center;
+    display: grid;
+    min-height: 7.6429rem;
+  }
 }
 
 .price__cost {
@@ -67,11 +78,14 @@
   grid-template-columns: 1fr 1fr;
   font-size: 1.2857rem;
   line-height: 1.2857rem;
-  padding-top: 20px;
-  padding-bottom: 20px;
+  padding-top: 1.4286rem;
+  padding-bottom: 1.4286rem;
 
   @media only screen and (min-width: 768px) {
     grid-template-columns: 1fr;
+    padding-top: 0.9286rem;
+    padding-bottom: 0.9286rem;
+    grid-gap: 0.7143rem;
   }
 }
 
@@ -80,10 +94,23 @@
   justify-self: start;
   align-items: center;
   display: flex;
+
+  @media only screen and (min-width: 768px) {
+    font-size: 2.1429rem;
+    line-height: 1.7143rem;
+    justify-self: center;
+  }
 }
 
 .price__product {
   @include reset;
+
+  @media only screen and (min-width: 768px) {
+    font-size: 22px;
+    line-height: 1.7143rem;
+    justify-self: center;
+    text-align: center;
+  }
 }
 
 .price::after {
