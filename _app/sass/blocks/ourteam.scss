@@ -20,6 +20,15 @@
 
 .ourteam__slides {
   @include reset;
+
+  &::after {
+    content: 'flickity';
+    display: none;
+
+    @media only screen and (min-width: 1200px) {
+      content: "";
+    }
+  }
 }
 
 .ourteam__slide {

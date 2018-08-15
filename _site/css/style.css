@@ -446,6 +446,16 @@ html {
   padding: 0;
   margin: 0;
   list-style: none; }
+  @media only screen and (min-width: 768px) {
+    .benefits__slides {
+      padding-left: 4.6429rem;
+      padding-right: 4.6429rem; } }
+  .benefits__slides::after {
+    content: 'flickity';
+    display: none; }
+    @media only screen and (min-width: 768px) {
+      .benefits__slides::after {
+        content: ""; } }
 
 .benefits__slide {
   position: relative;
@@ -462,6 +472,12 @@ html {
   text-align: center;
   grid-template-columns: 70%;
   justify-items: center; }
+  @media only screen and (min-width: 768px) {
+    .benefits__slide {
+      grid-auto-flow: column;
+      grid-template-columns: 1fr 1fr 1fr 1fr;
+      grid-template-rows: 25px minmax(70px, 1fr);
+      min-height: 0; } }
 
 .benefits__title {
   margin-top: 10px;
@@ -472,6 +488,10 @@ html {
   padding: 0;
   margin: 0;
   list-style: none; }
+  @media only screen and (min-width: 768px) {
+    .benefits__title {
+      grid-column: 2  / -1;
+      justify-self: start; } }
 
 .benefits__description {
   font-size: 18px;
@@ -479,11 +499,20 @@ html {
   padding: 0;
   margin: 0;
   list-style: none; }
+  @media only screen and (min-width: 768px) {
+    .benefits__description {
+      grid-column: 2 / -1;
+      justify-self: start;
+      text-align: left; } }
 
 .benefits__svg {
   width: 111px;
   height: 111px;
   fill: #ad9d8f; }
+  @media only screen and (min-width: 768px) {
+    .benefits__svg {
+      display: grid;
+      grid-row: 1 / -1; } }
 
 .button {
   display: grid;
@@ -951,6 +980,12 @@ html {
   padding: 0;
   margin: 0;
   list-style: none; }
+  .ourteam__slides::after {
+    content: 'flickity';
+    display: none; }
+    @media only screen and (min-width: 1200px) {
+      .ourteam__slides::after {
+        content: ""; } }
 
 .ourteam__slide {
   display: grid;
@@ -1019,6 +1054,12 @@ html {
   padding: 0;
   margin: 0;
   list-style: none; }
+  .ourwork__slides::after {
+    content: 'flickity';
+    display: none; }
+    @media only screen and (min-width: 1200px) {
+      .ourwork__slides::after {
+        content: ""; } }
 
 .ourwork__maintitle {
   padding: 0;
@@ -1068,7 +1109,7 @@ html {
   margin: 0;
   list-style: none;
   position: relative;
-  width: 39%;
+  width: 36%;
   padding-left: 70px; }
 
 .ourwork__manic::before {
@@ -1213,6 +1254,9 @@ html {
           transform: rotate(180deg);
   z-index: 99;
   fill: #f2f3f7; }
+  @media only screen and (min-width: 768px) {
+    .price::after {
+      bottom: -950px; } }
 
 /*!
  * Hamburgers

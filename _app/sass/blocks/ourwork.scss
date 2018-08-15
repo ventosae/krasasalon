@@ -11,6 +11,15 @@
 
 .ourwork__slides {
   @include reset;
+
+  &::after {
+    content: 'flickity';
+    display: none;
+
+    @media only screen and (min-width: 1200px) {
+      content: "";
+    }
+  }
 }
 
 .ourwork__maintitle {
@@ -62,7 +71,7 @@
   @include reset;
   position: relative;
 
-  width: 39%;
+  width: 36%;
   padding-left: 70px;
 }
 

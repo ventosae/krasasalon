@@ -125,4 +125,8 @@
   transform: rotate(180deg);
   z-index: 99;
   fill: #f2f3f7;
+
+  @media only screen and (min-width: 768px) {
+    bottom: -950px;
+  }
 }

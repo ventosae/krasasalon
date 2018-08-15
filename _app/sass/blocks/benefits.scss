@@ -15,6 +15,19 @@
   grid-gap: 1.563rem;
 
   @include reset;
+
+  @media only screen and (min-width: 768px) {
+    @include tablet;
+  }
+
+  &::after {
+    content: 'flickity';
+    display: none;
+
+    @media only screen and (min-width: 768px) {
+      content: "";
+    }
+  }
 }
 
 .benefits__slide {
@@ -29,8 +42,14 @@
   text-align: center;
 
   grid-template-columns: 70%;
-  // grid-gap: 1.7857rem;
   justify-items: center;
+
+  @media only screen and (min-width: 768px) {
+    grid-auto-flow: column;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 25px minmax(70px, 1fr);
+    min-height: 0;
+  }
 }
 
 .benefits__title {
@@ -42,6 +61,11 @@
   font-style: $futurist-medium-font;
 
   @include reset;
+
+  @media only screen and (min-width: 768px) {
+    grid-column: 2  / -1;
+    justify-self: start;
+  }
 }
 
 .benefits__description {
@@ -49,6 +73,12 @@
   line-height: 1.2857rem;
 
   @include reset;
+
+  @media only screen and (min-width: 768px) {
+    grid-column: 2 / -1;
+    justify-self: start;
+    text-align: left;
+  }
 }
 
 .benefits__svg {
@@ -56,4 +86,9 @@
   height: 111px;
 
   fill: $dark-b;
+
+  @media only screen and (min-width: 768px) {
+    display: grid;
+    grid-row: 1 / -1;
+  }
 }
