@@ -16,12 +16,21 @@
       content: "";
       position: absolute;
       top: 35px;
-      left: -15px;
+      left: -14px;
       border: 15px solid transparent;
       border-bottom-color: #ffffff;
       transform: rotate(45deg);
     }
   }
+
+  @media only screen and (min-width: 1200px) {
+    @include limit;
+    grid-template-columns: 1.5fr 2fr;
+    grid-gap: 0;
+    min-height: 13.2143rem;
+  }
+
+
 }
 
 .about__header {
@@ -38,6 +47,12 @@
     font-size: 1.8571rem;
     padding: 0;
   }
+
+  @media only screen and (min-width: 1200px) {
+    line-height: 30px;
+    font-size: 30px;
+    justify-self: start;
+  }
 }
 
 .about__description {
@@ -53,4 +68,8 @@
     margin-bottom: 0;
   }
 
+  @media only screen and (min-width: 1200px) {
+    line-height: 20px;
+    font-size: 24px;
+  }
 }

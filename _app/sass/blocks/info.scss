@@ -2,6 +2,18 @@
   background-color: $green;
   position: relative;
   grid-area: info;
+
+  @media only screen and (min-width: 768px) {
+    margin: 0;
+    padding-left: 4.6429rem;
+    padding-right: 4.6429rem;
+  }
+
+  @media only screen and (min-width: 768px) {
+    margin: 0;
+    padding-left: 8.5714rem;
+    padding-right: 8.5714rem;
+  }
 }
 
 .info::after {
@@ -16,4 +28,8 @@
   transform: rotate(180deg);
   z-index: 99;
   width: 100%;
+
+  @media only screen and (min-width: 768px) {
+    display: none;
+  }
 }

@@ -7,8 +7,11 @@ var flkty = new Flickity( '.main-carousel', {
 var elem = document.querySelector('.main-carousel');
 var flkty = new Flickity( elem, {
   cellAlign: 'left',
-  contain: true,
-  watchCSS:true
+  contain:true,
+  watchCSS:true,
+  accessibility: false,
+  imagesLoaded: false
+
 });
 
 var elem = document.querySelector('.main-carousel1');
@@ -22,14 +25,13 @@ var flkty = new Flickity( elem, {
 });
 
 // element argument can be a selector string
-//   for an individual element
+//   for an individual element-
 var flkty = new Flickity( '.main-carousel1', {
   // options
 });
 
 var elem = document.querySelector('.main-carousel2');
 var flkty = new Flickity( elem, {
-  // options
   cellAlign: 'left',
   contain: true,
   prevNextButtons: false,
@@ -42,3 +44,4 @@ var flkty = new Flickity( elem, {
 var flkty = new Flickity( '.main-carousel2', {
   // options
 });
+

@@ -3,24 +3,32 @@
   background-color: $light-g;
   position: relative;
 
-  @media only screen and (min-width: 768px){
+  @media only screen and (min-width: 768px) {
     @include tablet;
+  }
+
+  @media only screen and (min-width: 1200px) {
+    @include desktop;
   }
 }
 
 .price__table {
   display: grid;
+
+  @media only screen and (min-width: 1200px) {
+    @include limitm;
+  }
 }
 
 .price__header {
   @include reset;
   justify-self: center;
-  font-size: 22px;
-  line-height: 30px;
+  font-size: 1.5714rem;
+  line-height: 2.1429rem;
   font-family: $futurist-medium-font;
   text-transform: capitalize;
-  padding-bottom: 18px;
-  padding-top: 18px;
+  padding-bottom: 1.2857rem;
+  padding-top: 1.2857rem;
 
   &--first {
     @media only screen and (min-width: 768px) {
@@ -28,10 +36,17 @@
     }
   }
 
-  @media only screen and (min-width: 768px){
-    font-size: 30px;
-    line-height: 18px;
+  @media only screen and (min-width: 768px) {
+    font-size: 2.1429rem;
+    line-height: 1.2857rem;
     justify-self: start;
+  }
+
+  @media only screen and (min-width: 1200px) {
+    line-height: 1.7143rem;
+    font-size: 2.5714rem;
+    padding-top: 1.4286rem;
+    padding-bottom: 1.4286rem;
   }
 }
 
@@ -69,6 +84,10 @@
     align-items: center;
     display: grid;
     min-height: 7.6429rem;
+  }
+
+  @media only screen and (min-width: 1200px) {
+    border-bottom: 1px solid $light-g;
   }
 }
 
@@ -111,6 +130,10 @@
     justify-self: center;
     text-align: center;
   }
+
+  @media only screen and (min-width: 768px) {
+    width: 65%;
+  }
 }
 
 .price::after {
@@ -127,6 +150,6 @@
   fill: #f2f3f7;
 
   @media only screen and (min-width: 768px) {
-    bottom: -950px;
+    content: " "
   }
 }

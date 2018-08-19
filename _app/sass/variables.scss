@@ -20,6 +20,16 @@ $futurist-medium-font: "Futuris-Bold", arial, helvetica, sans-serif;
   list-style: none;
 }
 
+
+@mixin limit($width: 1400px) {
+  max-width: $width;
+  justify-self: center;
+}
+
+@mixin limitm($width: 1400px) {
+  max-width: $width;
+  margin: 0 auto;
+}
 // @mixin desktop($padding: 40px, $width: 1300px) {
 //   padding-left: $padding;
 //   padding-right: $padding;
@@ -31,6 +41,10 @@ $futurist-medium-font: "Futuris-Bold", arial, helvetica, sans-serif;
   padding-right: $padding;
 }
 
+@mixin desktop($padding: 8.5714rem) {
+  padding-left: $padding;
+  padding-right: $padding;
+}
 // @mixin mobile($padding: 20px, $width: 320px) {
 //   padding-left: $padding;
 //   padding-right: $padding;

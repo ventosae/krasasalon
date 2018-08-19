@@ -23,7 +23,7 @@
   transition: 0.5s;
   transition-delay: 0.5s;
 
-  @media only screen and (min-width:768px) {
+  @media only screen and (min-width: 768px) {
 
     position: relative;
     height: auto;
@@ -31,6 +31,10 @@
     background-color: $main-p;
   }
 
+  @media only screen and (min-width: 1200px) {
+    padding-left: 8.5714rem;
+    padding-right: 8.5714rem;
+  }
 }
 
 .navigation__items {
@@ -43,11 +47,16 @@
 
   @include reset;
 
-  @media only screen and (min-width:768px) {
+  @media only screen and (min-width: 768px) {
     @include tablet;
     display: flex;
     justify-content: space-between;
+  }
 
+  @media only screen and (min-width: 1200px) {
+    @include limitm;
+    padding-left: 0;
+    padding-right: 20%;
   }
 }
 
