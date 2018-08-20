@@ -1,6 +1,11 @@
 .footer {
   background-color: $main-p;
   grid-area: footer;
+
+  @media only screen and (min-width: 1200px) {
+    padding-left: 8.5714rem;
+    padding-right: 8.5714rem;
+  }
 }
 
 .footer__wrapper {

@@ -655,6 +655,10 @@ html {
 .footer {
   background-color: #45414e;
   grid-area: footer; }
+  @media only screen and (min-width: 1200px) {
+    .footer {
+      padding-left: 8.5714rem;
+      padding-right: 8.5714rem; } }
 
 @media only screen and (min-width: 768px) {
   .footer__wrapper {
