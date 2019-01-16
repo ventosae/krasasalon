@@ -70,5 +70,9 @@
   "dependencies": {
     "hamburgers": "^0.9.3",
     "jekyll": "^3.0.0-beta1"
-  }
+  },
+  "stylintignore": [
+    "/css/style.css",
+    "/css/style.min.css"
+  ]
 }
