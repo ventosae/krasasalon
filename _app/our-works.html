@@ -11,6 +11,32 @@
   <link rel="stylesheet" href="css\flickity.min.css">
   <script src="js\flickity.pkgd.min.js"></script>
   <script src="js\scripts.js" async defer></script>
+  <!-- Pixel Glass -->
+<!-- <style>
+  html {
+    background-repeat: no-repeat;
+    background-position: 50% 0;
+    /* Mobile layout by default */
+    background-image: url("img/krasa-works-mobile.png");
+  }
+  /* Tablet */
+  @media (min-width: 768px) {
+    html {
+      /* Tablet layout */
+      background-image: url("img/krasa-works-table.png");
+    }
+  }
+  /* Desktop */
+  @media (min-width: 1200px) {
+    html {
+      /* Desktop layout */
+      background-image: url("img/krasa-works-desktop.png");
+    }
+  }
+</style> -->
+<link href="../node_modules/pixel-glass/styles.css" rel="stylesheet">
+<script src="../node_modules/pixel-glass/script.js"></script>
+<!-- // Pixel Glass -->
 </head>
 
 <body>
@@ -56,22 +82,22 @@
       <p class="into__description">orem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.orem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
     </section>
 
-    <section class="ourwork container ourwork--page">
-      <h3 class="ourwork__maintitle">Наши Работы</h3>
-      <ul class="ourwork__slides">
-        <li class="ourwork__slide">
+    <section class="ourwork container ourwork--page ourwork--intro-page">
+      <ul class="ourwork__slides ourwork__slides--intro-page">
+        <li class="ourwork__slide ourwork__slide--intro-page">
           <img class="ourwork__image" src="img/example.jpg" alt="Краса Жулебино пример работы">
           <cite class="ourwork__title">Марира Рукаша</cite>
           <p class="ourwork__description">Попросил омолодить и омолодили! Кто теперь скажет, что мне 45? </p>
           <p class="ourwork__type ourwork__manic">Класический Маникюр</p>
         </li>
-        <li class="ourwork__slide">
+        <li class="ourwork__slide ourwork__slide--intro-page">
           <img class="ourwork__image" src="img/example.jpg" alt="Краса Жулебино пример работы">
           <cite class="ourwork__title">Марира Рукаша</cite>
           <p class="ourwork__description">Попросил омолодить и омолодили! Кто теперь скажет, что мне 45? </p>
           <p class="ourwork__type ourwork__manic">Класический Маникюр </p>
         </li>
-        <li class="ourwork__slide ">
+        <a href="" class="button button--book container button--intro-page">Записаться</a>
+        <li class="ourwork__slide ourwork__slide--intro-page">
           <img class="ourwork__image" src="img/example.jpg" alt="Краса Жулебино пример работы">
           <cite class="ourwork__title">Марира Рукаша</cite>
           <p class="ourwork__description">Попросил омолодить и омолодили! Кто теперь скажет, что мне 45? </p>
@@ -79,57 +105,65 @@
         </li>
       </ul>
     </section>
-
     <section class="pricetable">
-      <h1 class="pricetable__header"></h1>
+      <h1 class="pricetable__header">Прейскурант</h1>
       <div class="pricetable__table">
         <ul class="pricetable__list">
           <li class="pricetable__item">
             <dl class="pricetable__service">
-              <dt class="pricetable__name"></dt>
-              <dd class="pricetable__price"></dd>
+              <dt class="pricetable__name">Классический
+                маникюр</dt>
+              <dd class="pricetable__price">1 500 руб.</dd>
             </dl>
           </li>
           <li class="pricetable__item">
             <dl class="pricetable__service">
-              <dt class="pricetable__name"></dt>
-              <dd class="pricetable__price"></dd>
+              <dt class="pricetable__name">Современный
+                маникюр</dt>
+              <dd class="pricetable__price">2 000 руб.</dd>
             </dl>
           </li>
           <li class="pricetable__item">
             <dl class="pricetable__service">
-              <dt class="pricetable__name"></dt>
-              <dd class="pricetable__price"></dd>
+              <dt class="pricetable__name">Индивидуальный
+                маникюр</dt>
+              <dd class="pricetable__price">500 руб.</dd>
             </dl>
           </li>
           <li class="pricetable__item">
             <dl class="pricetable__service">
-              <dt class="pricetable__name"></dt>
-              <dd class="pricetable__price"></dd>
+              <dt class="pricetable__name">Маска ногти</dt>
+              <dd class="pricetable__price">1 000 руб.</dd>
             </dl>
           </li>
           <li class="pricetable__item">
             <dl class="pricetable__service">
-              <dt class="pricetable__name"></dt>
-              <dd class="pricetable__price"></dd>
+              <dt class="pricetable__name">Маска ногти</dt>
+              <dd class="pricetable__price">1 000 руб.</dd>
             </dl>
           </li>
           <li class="pricetable__item">
             <dl class="pricetable__service">
-              <dt class="pricetable__name"></dt>
-              <dd class="pricetable__price"></dd>
+              <dt class="pricetable__name">Маска ногти</dt>
+              <dd class="pricetable__price">1 000 руб.</dd>
             </dl>
           </li>
           <li class="pricetable__item">
             <dl class="pricetable__service">
-              <dt class="pricetable__name"></dt>
-              <dd class="pricetable__price"></dd>
+              <dt class="pricetable__name">Маска ногти</dt>
+              <dd class="pricetable__price">1 000 руб.</dd>
             </dl>
           </li>
         </ul>
       </div>
+      <div class="cta pricetable__cta">
+        <svg class="cta__image" viewBox="25 8 50 84" width="100%" height="100%">
+          <path d="M67.3,8.6H32.7c-3.8,0-6.8,3.1-6.8,6.8v69.1c0,3.8,3.1,6.8,6.8,6.8h34.5c3.8,0,6.9-3.1,6.9-6.9v-69  C74.1,11.7,71,8.6,67.3,8.6z M39.6,12.1h20.7v1.7c0,1-0.8,1.7-1.7,1.7H41.3c-1,0-1.7-0.8-1.7-1.7V12.1z M70.6,84.5  c0,1.9-1.5,3.4-3.4,3.4H32.7c-1.9,0-3.4-1.5-3.4-3.4V15.4c0-1.9,1.5-3.4,3.4-3.4h3.4v1.7c0,2.9,2.3,5.2,5.2,5.2h17.2  c2.9,0,5.2-2.3,5.2-5.2v-1.7h3.5c1.9,0,3.4,1.5,3.4,3.4V84.5z M50,48.3c1,0,1.7,0.8,1.7,1.7c0,1-0.8,1.7-1.7,1.7  c-1,0-1.7-0.8-1.7-1.7C48.3,49,49,48.3,50,48.3z M43.4,48.3c1,0,1.7,0.8,1.7,1.7c0,1-0.8,1.7-1.7,1.7c-1,0-1.7-0.8-1.7-1.7  C41.7,49,42.4,48.3,43.4,48.3z M56.6,48.3c1,0,1.7,0.8,1.7,1.7c0,1-0.8,1.7-1.7,1.7c-1,0-1.7-0.8-1.7-1.7  C54.9,49,55.7,48.3,56.6,48.3z"></path>
+        </svg>
+        <p class="cta__text">Если вы хотите узнать больше о наших услугах и цена - просто дзинь-дзинь и все.
+        </p>
+      </div>
     </section>
-
     <footer class="footer">
       <div class="footer__wrapper container">
         <p class="footer__cpa">Маникюр Педикюр и косметология <br> в Жулебино <br> Позвноните для записи! </p>

@@ -1,0 +1,40 @@
+.intro {
+  margin-right: 1.4286rem;
+  margin-left: 1.4286rem;
+  text-align: center;
+
+  @media screen and (min-width: 768px) {
+    margin-right: 4.6429rem;
+    margin-left: 4.6429rem;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 0.5fr 1fr;
+  }
+}
+
+.intro__header {
+  @include main-header;
+  padding-bottom: 1.7857rem;
+  padding-top: 1.7857rem;
+
+  @media screen and (min-width: 768px) {
+    padding-top: 1.7857rem;
+    padding-bottom: 1.7857rem;
+    text-align: left;
+    grid-column: 1 / span 4;
+    align-self: center;
+  }
+}
+
+.into__description {
+  @include reset;
+  padding-bottom: 1.5714rem;
+
+  @media screen and (min-width: 768px) {
+    text-align: left;
+    font-size: 1.5714rem;
+    line-height: 1.7143rem;
+    grid-column: 1 / span 3;
+    padding-bottom: 1.7857rem;
+  }
+}

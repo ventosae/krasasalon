@@ -117,3 +117,31 @@
     opacity: 0.6;
   }
 }
+
+.header__logo--ourwork::after {
+  @media only screen and (min-width: 768px) {
+    content: " ";
+    position: absolute;
+    right: 0;
+    left: 0;
+    height: 35px;
+    background-image: url("../img/angle_div_white.svg");
+    background-repeat: no-repeat;
+    transform: rotate(360deg);
+    z-index: 99;
+    fill: #ffffff;
+    bottom: -1px;
+  }
+
+  @media only screen and (min-width: 1200px) {
+    display: none;
+  }
+}
+
+.header__logo--ourwork {
+  @media only screen and (min-width: 768px) {
+    position: relative;
+    height: 220px;
+    background-position: center bottom 50%;
+  }
+}

@@ -46,7 +46,7 @@
   @include reset;
 
   &::after {
-    content: 'flickity';
+    content: "flickity";
     display: none;
 
     @media only screen and (min-width: 768px) {
@@ -146,5 +146,4 @@
     font-size: 2.1429rem;
     padding-top: 1.7857rem;
   }
-
 }

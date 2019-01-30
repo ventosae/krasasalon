@@ -2,8 +2,8 @@
 html {
   font-size: 14px;
   scroll-behavior: smooth;
+  box-sizing: border-box;
 }
-
 
 body {
   min-width: 320px;
@@ -15,7 +15,9 @@ body {
   color: $text-color;
 }
 
-section, header, footer {
+section,
+header,
+footer {
   grid-column: 1/-1;
 }
 
@@ -29,10 +31,6 @@ textarea,
 select,
 button {
   font: inherit;
-}
-
-html {
-  box-sizing: border-box;
 }
 
 *,
@@ -57,4 +55,28 @@ html {
 
 .menu-active {
   overflow: hidden;
+}
+
+.carousel::after {
+  content: "flickity";
+  display: none; /* hide :after */
+}
+
+@media screen and (min-width: 768px) {
+  /* disable Flickity for large devices */
+  .carousel::after {
+    content: "";
+  }
+}
+
+body::-webkit-scrollbar {
+  width: 0.5em;
+  height: 0.5em;
+}
+
+body::-webkit-scrollbar-thumb {
+  background-color: $main-p;
+  // outline: 1px solid slategrey;
+  // border-radius: 20px;
+  height: 0.5em;
 }

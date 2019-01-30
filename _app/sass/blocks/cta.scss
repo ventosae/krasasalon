@@ -1,0 +1,29 @@
+.cta__image {
+  fill: $text-color;
+  width: 50px;
+  height: 85px;
+  min-width: 50px;
+  max-width: 50px;
+
+  @media screen and (min-width: 768px) {
+    width: 60px;
+    height: 100px;
+    min-width: 60px;
+    max-width: 60px;
+  }
+}
+
+.cta__text {
+  @include reset;
+  font-size: 1.2857rem;
+  line-height: 1.2857rem;
+  display: grid;
+  align-content: center;
+  padding-left: 1.4286rem;
+
+  @media screen and (min-width: 768px) {
+    font-size: 1.5714rem;
+    line-height: 1.7143rem;
+    padding-left: 2.1429rem;
+  }
+}
