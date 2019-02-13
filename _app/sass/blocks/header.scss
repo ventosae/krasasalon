@@ -3,14 +3,14 @@
   display: grid;
   grid-area: header;
   grid-template-areas:
-  "logo"
-  "navigation";
+    "logo"
+    "navigation";
 
 
   @media only screen and (min-width: 768px) {
     grid-template-areas:
-    "navigation"
-    "logo";
+      "navigation"
+      "logo";
   }
 }
 
@@ -143,5 +143,11 @@
     position: relative;
     height: 220px;
     background-position: center bottom 50%;
+  }
+
+  @media only screen and (min-width: 1200px) {
+    height: calc(100vh - 310px);
+    padding: 0;
+    align-items: center;
   }
 }

@@ -1,3 +1,11 @@
+.cta {
+  @media only screen and (min-width: 1200px) {
+    grid-column: 4 / 7;
+    justify-content: center;
+    align-items: center;
+  }
+}
+
 .cta__image {
   fill: $text-color;
   width: 50px;
@@ -10,6 +18,14 @@
     height: 100px;
     min-width: 60px;
     max-width: 60px;
+  }
+
+  @media only screen and (min-width: 1200px) {
+    width: 127px;
+    height: 162px;
+    min-width: 96px;
+    max-width: 96px;
+    margin-right: 2rem;
   }
 }
 
@@ -25,5 +41,11 @@
     font-size: 1.5714rem;
     line-height: 1.7143rem;
     padding-left: 2.1429rem;
+  }
+
+  @media only screen and (min-width: 1200px) {
+    width: 50%;
+    max-width: 50%;
+    padding-left: 0;
   }
 }

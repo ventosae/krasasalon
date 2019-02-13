@@ -398,6 +398,10 @@ body::-webkit-scrollbar-thumb {
   background-color: #45414e;
   height: 0.5em; }
 
+.wrapper {
+  display: grid;
+  margin: 0 auto; }
+
 .about {
   display: grid;
   grid-gap: 1.071em;
@@ -673,6 +677,13 @@ body::-webkit-scrollbar-thumb {
     .button--intro-page {
       margin-right: 11.4286rem;
       margin-left: 11.4286rem; } }
+  @media screen and (min-width: 1200px) {
+    .button--intro-page {
+      margin-right: auto;
+      margin-left: auto;
+      width: 22.8571rem;
+      margin-top: 2.1429rem;
+      margin-bottom: 2.1429rem; } }
 
 .footer {
   background-color: #45414e;
@@ -1056,6 +1067,14 @@ body::-webkit-scrollbar-thumb {
     height: 220px;
     background-position: center bottom 50%; } }
 
+@media only screen and (min-width: 1200px) {
+  .header__logo--ourwork {
+    height: calc(100vh - 310px);
+    padding: 0;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center; } }
+
 .info {
   background-color: #ddeee9;
   position: relative;
@@ -1116,8 +1135,17 @@ body::-webkit-scrollbar-thumb {
       background-color: #45414e; } }
   @media only screen and (min-width: 1200px) {
     .navigation__list {
-      padding-left: 8.5714rem;
-      padding-right: 8.5714rem; } }
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      margin-left: 8.5714rem;
+      margin-right: 8.5714rem;
+      max-width: 1400px;
+      width: auto; } }
+  @media only screen and (min-width: 1645px) {
+    .navigation__list {
+      margin-left: auto;
+      margin-right: auto; } }
 
 .navigation__items {
   display: grid;
@@ -1142,7 +1170,11 @@ body::-webkit-scrollbar-thumb {
       max-width: 1400px;
       margin: 0 auto;
       padding-left: 0;
-      padding-right: 20%; } }
+      -webkit-box-pack: left;
+          -ms-flex-pack: left;
+              justify-content: left;
+      margin: 0;
+      padding-right: 8.5714rem; } }
 
 .navigation__item {
   padding: 20px;
@@ -1164,12 +1196,20 @@ body::-webkit-scrollbar-thumb {
       -webkit-box-pack: stretch;
           -ms-flex-pack: stretch;
               justify-content: stretch;
-      padding: 0;
+      padding-left: 10px;
+      padding-right: 10px;
       padding-top: 23px;
       padding-bottom: 23px;
       -webkit-box-align: center;
           -ms-flex-align: center;
               align-items: center; } }
+  @media only screen and (min-width: 1200px) {
+    .navigation__item {
+      padding-left: 25px;
+      padding-right: 25px; } }
+  @media only screen and (min-width: 1200px) {
+    .navigation__item:first-child {
+      padding-left: 0; } }
 
 .navigation__item--active {
   display: grid;
@@ -1537,6 +1577,10 @@ body::-webkit-scrollbar-thumb {
     .ourwork--intro-page {
       margin-right: 4.6429rem;
       margin-left: 4.6429rem; } }
+  @media screen and (min-width: 1200px) {
+    .ourwork--intro-page {
+      margin-right: 8.5714rem;
+      margin-left: 8.5714rem; } }
 
 .ourwork--intro-page::after {
   content: "";
@@ -1558,6 +1602,9 @@ body::-webkit-scrollbar-thumb {
       content: " ";
       margin-right: -4.6429rem;
       margin-left: -4.6429rem; } }
+  @media only screen and (min-width: 1200px) {
+    .ourwork--intro-page::after {
+      display: none; } }
 
 .ourwork__slides--intro-page {
   border: none;
@@ -1576,6 +1623,10 @@ body::-webkit-scrollbar-thumb {
     .pricetable {
       padding-right: 225px;
       padding-left: 4.6429rem; } }
+  @media screen and (min-width: 1200px) {
+    .pricetable {
+      padding-right: 0;
+      padding-left: 0; } }
 
 .pricetable__header {
   margin: 0;
@@ -1597,13 +1648,23 @@ body::-webkit-scrollbar-thumb {
       padding-bottom: 1.4286rem; } }
   @media screen and (min-width: 768px) {
     .pricetable__header {
-      padding-bottom: 40px; } }
+      padding-bottom: 2.8571rem; } }
+  @media screen and (min-width: 1200px) {
+    .pricetable__header {
+      padding-bottom: 2.8571rem;
+      padding-top: 2.8571rem;
+      grid-column: 1 / -1;
+      -ms-flex-item-align: center;
+          align-self: center; } }
 
 .pricetable__table {
   padding: 0;
   margin: 0;
   list-style: none;
   display: grid; }
+  @media only screen and (min-width: 1200px) {
+    .pricetable__table {
+      grid-column: 1 / 4; } }
 
 .pricetable__list {
   padding: 0;
@@ -1667,6 +1728,20 @@ body::-webkit-scrollbar-thumb {
     .pricetable::after {
       display: none; } }
 
+@media only screen and (min-width: 1200px) {
+  .pricetable__wrapper {
+    margin-left: 8.5714rem;
+    margin-right: 8.5714rem;
+    max-width: 1400px;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: auto 1fr;
+    margin-bottom: 2.8571rem; } }
+
+@media only screen and (min-width: 1645px) {
+  .pricetable__wrapper {
+    margin-left: auto;
+    margin-right: auto; } }
+
 .page-main {
   display: grid;
   grid-template-rows: 140px auto;
@@ -1677,6 +1752,16 @@ body::-webkit-scrollbar-thumb {
     .page-main {
       grid-template-areas: "header" "about" "price" "benefits" "info" "footer";
       grid-template-rows: auto; } }
+
+@media only screen and (min-width: 1200px) {
+  .cta {
+    grid-column: 4 / 7;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center; } }
 
 .cta__image {
   fill: #444445;
@@ -1690,6 +1775,13 @@ body::-webkit-scrollbar-thumb {
       height: 100px;
       min-width: 60px;
       max-width: 60px; } }
+  @media only screen and (min-width: 1200px) {
+    .cta__image {
+      width: 127px;
+      height: 162px;
+      min-width: 96px;
+      max-width: 96px;
+      margin-right: 2rem; } }
 
 .cta__text {
   padding: 0;
@@ -1706,6 +1798,11 @@ body::-webkit-scrollbar-thumb {
       font-size: 1.5714rem;
       line-height: 1.7143rem;
       padding-left: 2.1429rem; } }
+  @media only screen and (min-width: 1200px) {
+    .cta__text {
+      width: 50%;
+      max-width: 50%;
+      padding-left: 0; } }
 
 .price {
   grid-area: price;
@@ -1863,6 +1960,11 @@ body::-webkit-scrollbar-thumb {
       display: grid;
       grid-template-columns: 1fr 1fr 1fr 1fr;
       grid-template-rows: 0.5fr 1fr; } }
+  @media screen and (min-width: 1200px) {
+    .intro {
+      margin-right: 8.5714rem;
+      margin-left: 8.5714rem;
+      max-width: 1400px; } }
 
 .intro__header {
   padding: 0;
@@ -1893,6 +1995,10 @@ body::-webkit-scrollbar-thumb {
       grid-column: 1 / span 4;
       -ms-flex-item-align: center;
           align-self: center; } }
+  @media screen and (min-width: 1200px) {
+    .intro__header {
+      padding-bottom: 2.8571rem;
+      padding-top: 2.8571rem; } }
 
 .into__description {
   padding: 0;
@@ -1906,6 +2012,90 @@ body::-webkit-scrollbar-thumb {
       line-height: 1.7143rem;
       grid-column: 1 / span 3;
       padding-bottom: 1.7857rem; } }
+  @media screen and (min-width: 1200px) {
+    .into__description {
+      padding-bottom: 3.5714rem;
+      grid-column: 1 / span 2; } }
+
+.manicure__price {
+  margin-left: 1.4286rem;
+  margin-right: 1.4286rem; }
+  @media only screen and (min-width: 768px) {
+    .manicure__price {
+      margin-left: 4.6429rem;
+      margin-right: 4.6429rem; } }
+  @media only screen and (min-width: 1200px) {
+    .manicure__price {
+      margin-left: 8.5714rem;
+      margin-right: 8.5714rem; } }
+
+.manicure__pricetable {
+  padding-top: 0; }
+
+.cta-bold {
+  margin-left: 1.4286rem;
+  margin-right: 1.4286rem;
+  display: grid;
+  border: 6px solid #ad9d8f; }
+  @media only screen and (min-width: 768px) {
+    .cta-bold {
+      margin-left: 4.6429rem;
+      margin-right: 4.6429rem; } }
+  @media only screen and (min-width: 1200px) {
+    .cta-bold {
+      margin-left: 8.5714rem;
+      margin-right: 8.5714rem; } }
+
+.cta-bold__title {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  margin: 0;
+  padding-bottom: 1.7857rem;
+  font-size: 1.5714rem;
+  line-height: 2.1429rem;
+  font-family: "Futuris-Bold", arial, helvetica, sans-serif;
+  text-align: center;
+  padding-top: 0.7143rem;
+  padding-bottom: 1.4286rem; }
+  @media only screen and (min-width: 768px) {
+    .cta-bold__title {
+      font-size: 2.1429rem;
+      line-height: 1.2857rem;
+      text-align: left; } }
+  @media only screen and (min-width: 1200px) {
+    .cta-bold__title {
+      line-height: 1.7143rem;
+      font-size: 2.5714rem;
+      padding-bottom: 1.4286rem; } }
+
+.cta-bold__image {
+  fill: #444445;
+  width: 50px;
+  height: 85px;
+  min-width: 50px;
+  max-width: 50px;
+  justify-self: center; }
+
+.cta-bold__text {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  justify-self: center;
+  padding-right: 1.7857rem;
+  padding-left: 1.7857rem;
+  max-width: 28.5714rem;
+  padding-top: 1.4286rem;
+  padding-bottom: 0.7143rem;
+  font-family: "Futuris-Cyrillic", arial, helvetica, sans-serif;
+  font-size: 1.2857rem;
+  line-height: 1.7857rem; }
+
+.cta-bold__phone {
+  font-weight: bold;
+  font-family: "Futuris-Bold", arial, helvetica, sans-serif;
+  position: relative;
+  border-bottom: 1px solid; }
 
 /*!
  * Hamburgers

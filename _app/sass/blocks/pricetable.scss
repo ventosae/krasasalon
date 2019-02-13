@@ -8,6 +8,11 @@
     padding-right: 225px;
     padding-left: 4.6429rem;
   }
+
+  @media screen and (min-width: 1200px) {
+    padding-right: 0;
+    padding-left: 0;
+  }
 }
 
 .pricetable__header {
@@ -15,13 +20,24 @@
   padding-top: 5rem;
 
   @media screen and (min-width: 768px) {
-    padding-bottom: 40px;
+    padding-bottom: 2.8571rem;
+  }
+
+  @media screen and (min-width: 1200px) {
+    padding-bottom: 2.8571rem;
+    padding-top: 2.8571rem;
+    grid-column: 1 / -1;
+    align-self: center;
   }
 }
 
 .pricetable__table {
   @include reset;
   display: grid;
+
+  @media only screen and (min-width: 1200px) {
+    grid-column: 1 / 4;
+  }
 }
 
 .pricetable__list {
@@ -78,5 +94,21 @@
 
   @media only screen and (min-width: 768px) {
     display: none;
+  }
+}
+
+.pricetable__wrapper {
+  @media only screen and (min-width: 1200px) {
+    margin-left: 8.5714rem;
+    margin-right: 8.5714rem;
+    max-width: 1400px;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: auto 1fr;
+    margin-bottom: 2.8571rem;
+  }
+
+  @media only screen and (min-width: 1645px) {
+    margin-left: auto;
+    margin-right: auto;
   }
 }

@@ -10,6 +10,12 @@
     grid-template-columns: 1fr 1fr 1fr 1fr;
     grid-template-rows: 0.5fr 1fr;
   }
+
+  @media screen and (min-width: 1200px) {
+    margin-right: 8.5714rem;
+    margin-left: 8.5714rem;
+    max-width: 1400px;
+  }
 }
 
 .intro__header {
@@ -24,6 +30,11 @@
     grid-column: 1 / span 4;
     align-self: center;
   }
+
+  @media screen and (min-width: 1200px) {
+    padding-bottom: 2.8571rem;
+    padding-top: 2.8571rem;
+  }
 }
 
 .into__description {
@@ -36,5 +47,10 @@
     line-height: 1.7143rem;
     grid-column: 1 / span 3;
     padding-bottom: 1.7857rem;
+  }
+
+  @media screen and (min-width: 1200px) {
+    padding-bottom: 3.5714rem;
+    grid-column: 1 / span 2;
   }
 }

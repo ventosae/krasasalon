@@ -64,4 +64,12 @@
     margin-right: 11.4286rem;
     margin-left: 11.4286rem;
   }
+
+  @media screen and (min-width: 1200px) {
+    margin-right: auto;
+    margin-left: auto;
+    width: 22.8571rem;
+    margin-top: 2.1429rem;
+    margin-bottom: 2.1429rem;
+  }
 }

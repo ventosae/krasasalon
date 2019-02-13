@@ -182,6 +182,11 @@
     margin-right: 4.6429rem;
     margin-left: 4.6429rem;
   }
+
+  @media screen and (min-width: 1200px) {
+    margin-right: 8.5714rem;
+    margin-left: 8.5714rem;
+  }
 }
 
 .ourwork--intro-page::after {
@@ -203,6 +208,10 @@
     content: " ";
     margin-right: -4.6429rem;
     margin-left: -4.6429rem;
+  }
+
+  @media only screen and (min-width: 1200px) {
+    display: none;
   }
 }
 

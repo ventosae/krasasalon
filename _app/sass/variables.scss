@@ -20,6 +20,20 @@ $futurist-medium-font: "Futuris-Bold", arial, helvetica, sans-serif;
   list-style: none;
 }
 
+@mixin border {
+  margin-left: 1.4286rem;
+  margin-right: 1.4286rem;
+
+  @media only screen and (min-width: 768px) {
+    margin-left: 4.6429rem;
+    margin-right: 4.6429rem;
+  }
+
+  @media only screen and (min-width: 1200px) {
+    margin-left: 8.5714rem;
+    margin-right: 8.5714rem;
+  }
+}
 
 @mixin limit($width: 1400px) {
   max-width: $width;

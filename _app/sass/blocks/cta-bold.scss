@@ -1,0 +1,42 @@
+.cta-bold {
+  @include border;
+  display: grid;
+  border: 6px solid #ad9d8f;
+}
+
+.cta-bold__title {
+  @include reset;
+  @include fat-header;
+  padding-top: 0.7143rem;
+  padding-bottom: 1.4286rem;
+}
+
+.cta-bold__image {
+  fill: #444445;
+  width: 50px;
+  height: 85px;
+  min-width: 50px;
+  max-width: 50px;
+  justify-self: center;
+}
+
+.cta-bold__text {
+  @include reset;
+  justify-self: center;
+  padding-right: 1.7857rem;
+  padding-left: 1.7857rem;
+  max-width: 28.5714rem;
+  padding-top: 1.4286rem;
+  padding-bottom: 0.7143rem;
+  font-family: $futurist-font;
+  font-size: 1.2857rem;
+  line-height: 1.7857rem;
+}
+
+.cta-bold__phone {
+  font-weight: bold;
+  font-family: $futurist-medium-font;
+  position: relative;
+  border-bottom: 1px solid;
+
+}
