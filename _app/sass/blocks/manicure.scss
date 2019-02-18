@@ -2,7 +2,35 @@
   @include border;
 }
 
-.manicure__pricetable {
+.manicure__pricetable-header {
   padding-top: 0;
+
+  @media only screen and (min-width: 768px) {
+    padding-top: 1.7857rem;
+  }
+
 }
 
+.manicure__cta {
+  padding-bottom: 2.8571rem;
+  padding-top: 2.8571rem;
+  position: relative;
+}
+
+.manicure__cta::after {
+  content: "";
+  position: absolute;
+  right: 0;
+  left: 0;
+  background-image: url("../img/corner-white.svg");
+  background-repeat: no-repeat;
+  transform: rotate(180deg);
+  z-index: 99;
+  fill: #ffffff;
+  height: 34px;
+  bottom: -34px;
+
+  @media only screen and (min-width: 768px) {
+    display: none;
+  }
+}

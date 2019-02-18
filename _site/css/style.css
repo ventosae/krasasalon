@@ -2029,8 +2029,33 @@ body::-webkit-scrollbar-thumb {
       margin-left: 8.5714rem;
       margin-right: 8.5714rem; } }
 
-.manicure__pricetable {
+.manicure__pricetable-header {
   padding-top: 0; }
+  @media only screen and (min-width: 768px) {
+    .manicure__pricetable-header {
+      padding-top: 1.7857rem; } }
+
+.manicure__cta {
+  padding-bottom: 2.8571rem;
+  padding-top: 2.8571rem;
+  position: relative; }
+
+.manicure__cta::after {
+  content: "";
+  position: absolute;
+  right: 0;
+  left: 0;
+  background-image: url("../img/corner-white.svg");
+  background-repeat: no-repeat;
+  -webkit-transform: rotate(180deg);
+          transform: rotate(180deg);
+  z-index: 99;
+  fill: #ffffff;
+  height: 34px;
+  bottom: -34px; }
+  @media only screen and (min-width: 768px) {
+    .manicure__cta::after {
+      display: none; } }
 
 .cta-bold {
   margin-left: 1.4286rem;
@@ -2045,6 +2070,12 @@ body::-webkit-scrollbar-thumb {
     .cta-bold {
       margin-left: 8.5714rem;
       margin-right: 8.5714rem; } }
+  @media screen and (min-width: 768px) {
+    .cta-bold {
+      grid-template-columns: 200px 426px;
+      -webkit-box-pack: center;
+          -ms-flex-pack: center;
+              justify-content: center; } }
 
 .cta-bold__title {
   padding: 0;
@@ -2068,6 +2099,14 @@ body::-webkit-scrollbar-thumb {
       line-height: 1.7143rem;
       font-size: 2.5714rem;
       padding-bottom: 1.4286rem; } }
+  @media screen and (min-width: 768px) {
+    .cta-bold__title {
+      -webkit-box-pack: left;
+          -ms-flex-pack: left;
+              justify-content: left;
+      justify-self: left;
+      padding-top: 20px;
+      padding-left: 1.7857rem; } }
 
 .cta-bold__image {
   fill: #444445;
@@ -2076,6 +2115,16 @@ body::-webkit-scrollbar-thumb {
   min-width: 50px;
   max-width: 50px;
   justify-self: center; }
+  @media screen and (min-width: 768px) {
+    .cta-bold__image {
+      grid-column: 1 / 2;
+      grid-row: 1 / span 2;
+      -ms-flex-item-align: center;
+          align-self: center;
+      width: 70px;
+      height: 118px;
+      min-width: 70px;
+      max-width: 118px; } }
 
 .cta-bold__text {
   padding: 0;
