@@ -53,6 +53,14 @@
   font-family: $futurist-font;
   font-size: 1.2857rem;
   line-height: 1.7857rem;
+
+  @media screen and (min-width: 768px) {
+    font-size: 1.5714rem;
+    line-height: 1.7143rem;
+    padding-bottom: 2.8571rem;
+    padding-top: 1.4286rem;
+    justify-self: left;
+  }
 }
 
 .cta-bold__phone {
@@ -60,5 +68,4 @@
   font-family: $futurist-medium-font;
   position: relative;
   border-bottom: 1px solid;
-
 }

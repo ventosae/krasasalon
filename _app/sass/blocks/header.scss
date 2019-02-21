@@ -118,7 +118,7 @@
   }
 }
 
-.header__logo--ourwork::after {
+.header__logo--tablet::after {
   @media only screen and (min-width: 768px) {
     content: " ";
     position: absolute;
@@ -138,7 +138,7 @@
   }
 }
 
-.header__logo--ourwork {
+.header__logo--tablet {
   @media only screen and (min-width: 768px) {
     position: relative;
     height: 220px;

@@ -3,18 +3,21 @@
 }
 
 .manicure__pricetable-header {
-  padding-top: 0;
+  padding-top: 0.7143rem;
 
   @media only screen and (min-width: 768px) {
     padding-top: 1.7857rem;
   }
-
 }
 
 .manicure__cta {
   padding-bottom: 2.8571rem;
   padding-top: 2.8571rem;
   position: relative;
+
+  @media only screen and (min-width: 768px) {
+    padding-bottom: 30px;
+  }
 }
 
 .manicure__cta::after {
@@ -28,9 +31,41 @@
   z-index: 99;
   fill: #ffffff;
   height: 34px;
-  bottom: -34px;
+  bottom: -33px;
 
   @media only screen and (min-width: 768px) {
     display: none;
+  }
+}
+
+.manicure__preicetable-price {
+  text-align: center;
+
+  @media only screen and (min-width: 1200px) {
+    text-align: right;
+  }
+}
+
+.manicure__logo {
+  @media only screen and (min-width: 768px) {
+    background-image: url("../img/manicure-bg.jpg");
+    background-position: center bottom 75%;
+  }
+
+  @media only screen and (min-width: 1200px) {
+    background-size: cover;
+  }
+}
+
+.manicure__preicetable-wrapper {
+  @media only screen and (min-width: 1200px) {
+    max-width: 460px;
+    margin: 0;
+  }
+}
+
+.manicure__preicetable-table {
+  @media only screen and (min-width: 1200px) {
+    grid-column: 1 / -1;
   }
 }
