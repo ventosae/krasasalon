@@ -7,6 +7,11 @@
     grid-template-columns: 200px 426px;
     justify-content: center;
   }
+
+  @media screen and (min-width: 1200px) {
+    grid-template-columns: 380px;
+    max-width: 480px;
+  }
 }
 
 .cta-bold__title {
@@ -20,6 +25,14 @@
     justify-self: left;
     padding-top: 20px;
     padding-left: 1.7857rem;
+  }
+
+  @media screen and (min-width: 1200px) {
+    justify-self: center;
+    padding-left: 0;
+    padding-bottom: 1.7857rem;
+    padding-top: 3.2143rem;
+    font-size: 2.1429rem;
   }
 }
 
@@ -39,6 +52,10 @@
     height: 118px;
     min-width: 70px;
     max-width: 118px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    grid-row: 2/span 2;
   }
 }
 
@@ -60,6 +77,11 @@
     padding-bottom: 2.8571rem;
     padding-top: 1.4286rem;
     justify-self: left;
+  }
+
+  @media screen and (min-width: 1200px) {
+    padding-top: 15px;
+    padding-bottom: 45px;
   }
 }
 
