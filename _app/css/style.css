@@ -2017,17 +2017,20 @@ body::-webkit-scrollbar-thumb {
       padding-bottom: 3.5714rem;
       grid-column: 1 / span 2; } }
 
-.manicure__price {
-  margin-left: 1.4286rem;
-  margin-right: 1.4286rem; }
-  @media only screen and (min-width: 768px) {
-    .manicure__price {
-      margin-left: 4.6429rem;
-      margin-right: 4.6429rem; } }
-  @media only screen and (min-width: 1200px) {
-    .manicure__price {
-      margin-left: 8.5714rem;
-      margin-right: 8.5714rem; } }
+.manicure__intro {
+  margin: auto; }
+
+@media only screen and (min-width: 1200px) {
+  .manicure__main {
+    margin: auto; } }
+
+@media only screen and (min-width: 1200px) {
+  .manicure__price {
+    grid-area: pricetable;
+    margin-left: 0;
+    margin-right: 0;
+    min-width: 380px;
+    padding-bottom: 2.5rem; } }
 
 .manicure__pricetable-header {
   padding-top: 0.7143rem; }
@@ -2042,6 +2045,11 @@ body::-webkit-scrollbar-thumb {
   @media only screen and (min-width: 768px) {
     .manicure__cta {
       padding-bottom: 30px; } }
+  @media only screen and (min-width: 1200px) {
+    .manicure__cta {
+      grid-area: cta;
+      padding-top: 0;
+      padding-bottom: 0; } }
 
 .manicure__cta::after {
   content: "";
@@ -2060,11 +2068,13 @@ body::-webkit-scrollbar-thumb {
     .manicure__cta::after {
       display: none; } }
 
-.manicure__preicetable-price {
-  text-align: center; }
-  @media only screen and (min-width: 1200px) {
-    .manicure__preicetable-price {
-      text-align: right; } }
+@media only screen and (min-width: 768px) {
+  .manicure__preicetable-price {
+    text-align: center; } }
+
+@media only screen and (min-width: 1200px) {
+  .manicure__preicetable-price {
+    text-align: right; } }
 
 @media only screen and (min-width: 768px) {
   .manicure__logo {
@@ -2077,26 +2087,41 @@ body::-webkit-scrollbar-thumb {
 
 @media only screen and (min-width: 1200px) {
   .manicure__preicetable-wrapper {
-    max-width: 460px;
-    margin: 0; } }
+    margin: 0;
+    max-width: 550px; } }
 
 @media only screen and (min-width: 1200px) {
   .manicure__preicetable-table {
     grid-column: 1 / -1; } }
 
-.cta-bold {
+.manicure__wrapper {
   margin-left: 1.4286rem;
-  margin-right: 1.4286rem;
-  display: grid;
-  border: 6px solid #ad9d8f; }
+  margin-right: 1.4286rem; }
   @media only screen and (min-width: 768px) {
-    .cta-bold {
+    .manicure__wrapper {
       margin-left: 4.6429rem;
       margin-right: 4.6429rem; } }
   @media only screen and (min-width: 1200px) {
-    .cta-bold {
+    .manicure__wrapper {
       margin-left: 8.5714rem;
       margin-right: 8.5714rem; } }
+  @media only screen and (min-width: 1200px) {
+    .manicure__wrapper {
+      display: grid;
+      grid-template-columns: [cta] 485px [pricetable] 3fr 2fr;
+      max-width: 1400px;
+      grid-column-gap: 2.5rem; } }
+
+.manicure__pricetable-header--first {
+  display: none; }
+  @media only screen and (min-width: 1200px) {
+    .manicure__pricetable-header--first {
+      display: inline;
+      padding-top: 0; } }
+
+.cta-bold {
+  display: grid;
+  border: 6px solid #ad9d8f; }
   @media screen and (min-width: 768px) {
     .cta-bold {
       grid-template-columns: 200px 426px;
@@ -2106,7 +2131,9 @@ body::-webkit-scrollbar-thumb {
   @media screen and (min-width: 1200px) {
     .cta-bold {
       grid-template-columns: 380px;
-      max-width: 480px; } }
+      max-width: 480px;
+      margin-left: 0;
+      margin-right: 0; } }
 
 .cta-bold__title {
   padding: 0;
