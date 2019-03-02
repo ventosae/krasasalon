@@ -2017,6 +2017,109 @@ body::-webkit-scrollbar-thumb {
       padding-bottom: 3.5714rem;
       grid-column: 1 / span 2; } }
 
+.cosmetology__intro {
+  margin: auto; }
+
+@media only screen and (min-width: 1200px) {
+  .cosmetology__main {
+    margin: auto; } }
+
+@media only screen and (min-width: 1200px) {
+  .cosmetology__price {
+    grid-area: pricetable;
+    margin-left: 0;
+    margin-right: 0;
+    min-width: 380px;
+    padding-bottom: 2.5rem; } }
+
+.cosmetology__pricetable-header {
+  padding-top: 0.7143rem; }
+  @media only screen and (min-width: 768px) {
+    .cosmetology__pricetable-header {
+      padding-top: 1.7857rem; } }
+
+.cosmetology__cta {
+  padding-bottom: 2.8571rem;
+  padding-top: 2.8571rem;
+  position: relative; }
+  @media only screen and (min-width: 768px) {
+    .cosmetology__cta {
+      padding-bottom: 30px; } }
+  @media only screen and (min-width: 1200px) {
+    .cosmetology__cta {
+      grid-area: cta;
+      padding-top: 0;
+      padding-bottom: 0; } }
+
+.cosmetology__cta::after {
+  content: "";
+  position: absolute;
+  right: 0;
+  left: 0;
+  background-image: url("../img/corner-white.svg");
+  background-repeat: no-repeat;
+  -webkit-transform: rotate(180deg);
+          transform: rotate(180deg);
+  z-index: 99;
+  fill: #ffffff;
+  height: 34px;
+  bottom: -33px; }
+  @media only screen and (min-width: 768px) {
+    .cosmetology__cta::after {
+      display: none; } }
+
+@media only screen and (min-width: 768px) {
+  .cosmetology__preicetable-price {
+    text-align: center; } }
+
+@media only screen and (min-width: 1200px) {
+  .cosmetology__preicetable-price {
+    text-align: right; } }
+
+@media only screen and (min-width: 768px) {
+  .cosmetology__logo {
+    background-image: url("../img/cosmetology.jpg");
+    background-position: center bottom 73%;
+    background-color: #ffeab2; } }
+
+@media only screen and (min-width: 1200px) {
+  .cosmetology__logo {
+    background-size: cover; } }
+
+@media only screen and (min-width: 1200px) {
+  .cosmetology__preicetable-wrapper {
+    margin: 0;
+    max-width: 550px; } }
+
+@media only screen and (min-width: 1200px) {
+  .cosmetology__preicetable-table {
+    grid-column: 1 / -1; } }
+
+.cosmetology__wrapper {
+  margin-left: 1.4286rem;
+  margin-right: 1.4286rem; }
+  @media only screen and (min-width: 768px) {
+    .cosmetology__wrapper {
+      margin-left: 4.6429rem;
+      margin-right: 4.6429rem; } }
+  @media only screen and (min-width: 1200px) {
+    .cosmetology__wrapper {
+      margin-left: 8.5714rem;
+      margin-right: 8.5714rem; } }
+  @media only screen and (min-width: 1200px) {
+    .cosmetology__wrapper {
+      display: grid;
+      grid-template-columns: [cta] 485px [pricetable] 3fr 2fr;
+      max-width: 1400px;
+      grid-column-gap: 2.5rem; } }
+
+.cosmetology__pricetable-header--first {
+  display: none; }
+  @media only screen and (min-width: 1200px) {
+    .cosmetology__pricetable-header--first {
+      display: inline;
+      padding-top: 0; } }
+
 .manicure__intro {
   margin: auto; }
 

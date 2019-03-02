@@ -1,0 +1,117 @@
+.cosmetology__intro {
+  margin: auto;
+}
+
+.cosmetology__main {
+  @media only screen and (min-width: 1200px) {
+    margin: auto;
+  }
+}
+
+.cosmetology__price {
+  @media only screen and (min-width: 1200px) {
+    grid-area: pricetable;
+    margin-left: 0;
+    margin-right: 0;
+    min-width: 380px;
+    padding-bottom: 2.5rem;
+  }
+}
+
+.cosmetology__pricetable-header {
+  padding-top: 0.7143rem;
+
+  @media only screen and (min-width: 768px) {
+    padding-top: 1.7857rem;
+  }
+}
+
+.cosmetology__cta {
+  padding-bottom: 2.8571rem;
+  padding-top: 2.8571rem;
+  position: relative;
+
+  @media only screen and (min-width: 768px) {
+    padding-bottom: 30px;
+  }
+
+  @media only screen and (min-width: 1200px) {
+    grid-area: cta;
+    padding-top: 0;
+    padding-bottom: 0;
+  }
+}
+
+.cosmetology__cta::after {
+  content: "";
+  position: absolute;
+  right: 0;
+  left: 0;
+
+  background-image: url("../img/corner-white.svg");
+  background-repeat: no-repeat;
+  transform: rotate(180deg);
+  z-index: 99;
+  fill: #ffffff;
+  height: 34px;
+  bottom: -33px;
+
+  @media only screen and (min-width: 768px) {
+    display: none;
+  }
+}
+
+.cosmetology__preicetable-price {
+  @media only screen and (min-width: 768px) {
+    text-align: center;
+  }
+
+  @media only screen and (min-width: 1200px) {
+    text-align: right;
+  }
+}
+
+.cosmetology__logo {
+  @media only screen and (min-width: 768px) {
+    background-image: url("../img/cosmetology.jpg");
+    background-position: center bottom 73%;
+    background-color: #ffeab2;
+  }
+
+  @media only screen and (min-width: 1200px) {
+    background-size: cover;
+  }
+}
+
+.cosmetology__preicetable-wrapper {
+  @media only screen and (min-width: 1200px) {
+    margin: 0;
+    max-width: 550px;
+  }
+}
+
+.cosmetology__preicetable-table {
+  @media only screen and (min-width: 1200px) {
+    grid-column: 1 / -1;
+  }
+}
+
+.cosmetology__wrapper {
+  @include border;
+
+  @media only screen and (min-width: 1200px) {
+    display: grid;
+    grid-template-columns: [cta] 485px [pricetable] 3fr 2fr;
+    max-width: 1400px;
+    grid-column-gap: 2.5rem;
+  }
+}
+
+.cosmetology__pricetable-header--first {
+  display: none;
+
+  @media only screen and (min-width: 1200px) {
+    display: inline;
+    padding-top: 0;
+  }
+}
