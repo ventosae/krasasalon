@@ -2328,6 +2328,65 @@ body::-webkit-scrollbar-thumb {
   position: relative;
   border-bottom: 1px solid; }
 
+.contacts__wrapper {
+  margin-left: 1.4286rem;
+  margin-right: 1.4286rem; }
+  @media only screen and (min-width: 768px) {
+    .contacts__wrapper {
+      margin-left: 4.6429rem;
+      margin-right: 4.6429rem; } }
+  @media only screen and (min-width: 1200px) {
+    .contacts__wrapper {
+      margin-left: 8.5714rem;
+      margin-right: 8.5714rem; } }
+
+.contacts__infobox-phone {
+  margin-bottom: 2.1429rem; }
+
+.contacts__ourteam {
+  margin: 0;
+  padding-top: 1.7857rem; }
+
+.info-box {
+  border: 6px solid #ad9d8f;
+  display: grid;
+  grid-template-columns: 80px 1fr;
+  padding-top: 0.7143rem;
+  padding-bottom: 0.7143rem;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  padding-left: 0.7143rem;
+  padding-right: 0.7143rem; }
+
+.info-box__image {
+  fill: #444445;
+  width: 35px;
+  height: 60px;
+  min-width: 35px;
+  max-width: 35px;
+  justify-self: center;
+  -ms-flex-item-align: center;
+      align-self: center; }
+  .info-box__image--clock {
+    width: 65px;
+    min-width: 65px;
+    max-width: 65px; }
+
+.info-box__text {
+  font-size: 1.2857rem;
+  line-height: 2.1429rem;
+  justify-self: center;
+  text-align: center;
+  margin: 0;
+  padding-right: 2.1429rem;
+  max-width: 16.0714rem; }
+
+.info-box__text--phone {
+  border-bottom: 1px #e8e1db solid; }
+
 /*!
  * Hamburgers
  * @description Tasty CSS-animated hamburgers

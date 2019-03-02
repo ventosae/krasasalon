@@ -1,0 +1,41 @@
+.info-box {
+  border: 6px solid #ad9d8f;
+  display: grid;
+  grid-template-columns: 80px 1fr;
+  padding-top: 0.7143rem;
+  padding-bottom: 0.7143rem;
+  justify-content: center;
+  align-content: center;
+  padding-left: 0.7143rem;
+  padding-right: 0.7143rem;
+}
+
+.info-box__image {
+  fill: #444445;
+  width: 35px;
+  height: 60px;
+  min-width: 35px;
+  max-width: 35px;
+  justify-self: center;
+  align-self: center;
+
+  &--clock {
+    width: 65px;
+    min-width: 65px;
+    max-width: 65px;
+  }
+}
+
+.info-box__text {
+  font-size: 1.2857rem;
+  line-height: 2.1429rem;
+  justify-self: center;
+  text-align: center;
+  margin: 0;
+  padding-right: 2.1429rem;
+  max-width: 16.0714rem;
+}
+
+.info-box__text--phone {
+  border-bottom: 1px #e8e1db solid;
+}
