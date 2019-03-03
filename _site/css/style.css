@@ -2347,6 +2347,73 @@ body::-webkit-scrollbar-thumb {
   margin: 0;
   padding-top: 1.7857rem; }
 
+.form__contact {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  border: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column; }
+
+.form__title {
+  margin: 0;
+  padding-bottom: 1.7857rem;
+  font-size: 1.5714rem;
+  line-height: 2.1429rem;
+  font-family: "Futuris-Bold", arial, helvetica, sans-serif;
+  text-align: center; }
+  @media only screen and (min-width: 768px) {
+    .form__title {
+      font-size: 2.1429rem;
+      line-height: 1.2857rem;
+      text-align: left; } }
+  @media only screen and (min-width: 1200px) {
+    .form__title {
+      line-height: 1.7143rem;
+      font-size: 2.5714rem;
+      padding-bottom: 1.4286rem; } }
+
+.form__field {
+  font-size: 18px;
+  line-height: 26px;
+  text-transform: uppercase; }
+
+.form__input {
+  border: none;
+  background-color: #ede9e6;
+  width: 100%;
+  height: 60px;
+  font-size: 18px;
+  line-height: 26px;
+  font-family: "Futuris-Bold", arial, helvetica, sans-serif;
+  color: #444445;
+  padding-left: 0.7143rem;
+  margin-bottom: 1.4286rem; }
+
+.form__filed--message {
+  border: none;
+  background-color: #ede9e6;
+  font-size: 18px;
+  line-height: 26px;
+  font-family: "Futuris-Bold", arial, helvetica, sans-serif;
+  padding-left: 0.7143rem;
+  width: 100%;
+  height: 11.4286rem;
+  margin-bottom: 2.1429rem; }
+
+.form__button {
+  margin: 0;
+  border: none;
+  width: 100%;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  font-family: "Futuris-Bold", arial, helvetica, sans-serif; }
+
 .info-box {
   border: 6px solid #ad9d8f;
   display: grid;
