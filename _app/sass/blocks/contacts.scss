@@ -1,3 +1,7 @@
+.contacts {
+  position: relative;
+}
+
 .contacts__wrapper {
   @include border;
 }
@@ -9,4 +13,27 @@
 .contacts__ourteam {
   margin: 0;
   padding-top: 1.7857rem;
+}
+
+.contacts::after {
+  content: "";
+  position: absolute;
+  right: 0;
+  bottom: -35px;
+  left: 0;
+  height: 35px;
+  background-image: url(../img/corner-white.svg);
+  background-repeat: no-repeat;
+  transform: rotate(180deg);
+  z-index: 99;
+  width: 100%;
+}
+
+.contacts__text {
+  @include reset;
+  text-transform: uppercase;
+  color: #696a6b;
+  font-size: 0.7143rem;
+  margin-top: 1.4286rem;
+  margin-bottom: 0.7143rem;
 }
