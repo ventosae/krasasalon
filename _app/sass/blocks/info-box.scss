@@ -8,7 +8,22 @@
   align-content: center;
   padding-left: 0.7143rem;
   padding-right: 0.7143rem;
+  margin-bottom: 2.1429rem;
+
+  @media only screen and (min-width: 768px) {
+    padding-top: 19px;
+    padding-bottom: 19px;
+    grid-template-columns: 200px 1fr;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 2.8571rem;
+  }
+
+  @media only screen and (min-width: 1200px) {
+    margin: 0;
+  }
 }
+
 
 .info-box__image {
   fill: #444445;
@@ -19,10 +34,24 @@
   justify-self: center;
   align-self: center;
 
+  @media only screen and (min-width: 768px) {
+    width: 76px;
+    height: 122px;
+    min-width: 76px;
+    max-width: 76px;
+  }
+
   &--clock {
     width: 65px;
     min-width: 65px;
     max-width: 65px;
+
+    @media only screen and (min-width: 768px) {
+      width: 130px;
+      min-width: 130px;
+      max-width: 65px;
+      height: 122px;
+    }
   }
 }
 
@@ -34,6 +63,12 @@
   margin: 0;
   padding-right: 2.1429rem;
   max-width: 16.0714rem;
+
+  @media only screen and (min-width: 768px) {
+    font-size: 2.1429rem;
+    line-height: 3.2143rem;
+    max-width: 20rem;
+  }
 }
 
 .info-box__text--phone {

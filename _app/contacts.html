@@ -17,7 +17,7 @@
   <main class="page-main">
     <header class="header">
       <h1 class="visually-hidden">Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi, voluptatibus?</h1>
-      <div class="header__logo">
+      <div class="header__logo header__logo--tablet contacts__logo">
         <picture class="header__picture">
           <source media="(min-width:768px )" srcset="img/krasa-logo-main.svg">
           <img class="header__picture" src="img/krasa-logo-mobile.svg" alt="Краса Жулебино Лого" width="145" height="60">
@@ -111,9 +111,11 @@
               <textarea class="form__filed--message" name="" id="" cols="30" rows="10" placeholder="Напишите, что вы ходите сказать"></textarea>
             </fieldset>
           </from>
-          <button href="" class="button button--book container form__button">Отправить
-          </button>
-          <p class="contacts__text">*Обязательные поля</p>
+          <div class="form__wrapper">
+            <button href="" class="button button--book container form__button">Отправить
+            </button>
+            <p class="contacts__text">*Обязательные поля</p>
+          </div>
         </div>
     </section>
 

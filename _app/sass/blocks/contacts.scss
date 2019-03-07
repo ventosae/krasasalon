@@ -4,22 +4,28 @@
 
 .contacts__wrapper {
   @include border;
-}
 
-.contacts__infobox-phone {
-  margin-bottom: 2.1429rem;
+  @media only screen and (min-width: 1200px) {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+  }
 }
 
 .contacts__ourteam {
   margin: 0;
-  padding-top: 1.7857rem;
+  padding-bottom: 5rem;
+  padding-top: 0;
+
+  @media only screen and (min-width: 1200px) {
+    grid-column: 1/-1;
+  }
 }
 
 .contacts::after {
   content: "";
   position: absolute;
   right: 0;
-  bottom: -35px;
+  bottom: -34px;
   left: 0;
   height: 35px;
   background-image: url(../img/corner-white.svg);
@@ -27,6 +33,10 @@
   transform: rotate(180deg);
   z-index: 99;
   width: 100%;
+
+  @media only screen and (min-width: 768px) {
+    display: none;
+  }
 }
 
 .contacts__text {
@@ -36,4 +46,47 @@
   font-size: 0.7143rem;
   margin-top: 1.4286rem;
   margin-bottom: 0.7143rem;
+
+  @media only screen and (min-width: 768px) {
+    font-size: 14px;
+    margin: 0;
+    align-self: center;
+  }
+}
+
+.contacts__logo {
+  @media only screen and (min-width: 768px) {
+    background-image: url(../img/contacts-bg.jpg);
+  }
+}
+
+.contacts__info {
+  margin: 0;
+
+  @media only screen and (min-width: 1200px) {
+    grid-column: 1 / -1;
+    display: flex;
+    flex: 1;
+  }
+}
+
+.contacts__infobox-phone {
+  margin-top: 1.0714rem;
+
+  @media only screen and (min-width: 1200px) {
+    margin: 0;
+  }
+}
+
+.contacts__team {
+  @media only screen and (min-width: 1200px) {
+    grid-column: 1/-1;
+  }
+}
+
+.contacts__form {
+  @media only screen and (min-width: 1200px) {
+    grid-column: 1/-1;
+    display: contents;
+  }
 }

@@ -3,6 +3,10 @@
   border: none;
   display: flex;
   flex-direction: column;
+
+  @media only screen and (min-width: 1200px) {
+    display: contents;
+  }
 }
 
 .form__title {
@@ -11,9 +15,14 @@
 
 .form__field {
   font-size: 1rem;
-  line-height: 26px;
+  line-height: 1.8571rem;
   text-transform: uppercase;
 
+  @media only screen and (min-width: 768px) {
+    font-size: 1.5714rem;
+    line-height: 1.8571rem;
+    padding-bottom: 0.3571rem;
+  }
 }
 
 .form__input {
@@ -27,6 +36,14 @@
   color: $text-color;
   padding-left: 0.7143rem;
   margin-bottom: 1.4286rem;
+
+  @media only screen and (min-width: 768px) {
+    font-size: 1.5714rem;
+    line-height: 1.8571rem;
+    margin-bottom: 2.1429rem;
+    height: 5rem;
+    padding-left: 1.4286rem;
+  }
 }
 
 .form__filed--message {
@@ -41,6 +58,12 @@
   margin-bottom: 2.1429rem;
   color: $text-color;
   padding-top: 0.7143rem;
+
+  @media only screen and (min-width: 768px) {
+    font-size: 1.5714rem;
+    line-height: 1.8571rem;
+    padding-left: 1.4286rem;
+  }
 }
 
 .form__button {
@@ -50,4 +73,20 @@
   text-transform: uppercase;
   letter-spacing: 1px;
   font-family: $futurist-medium-font;
+
+  @media only screen and (min-width: 768px) {
+    width: 50%;
+  }
 }
+
+.form__wrapper {
+  display: flex;
+  flex-direction: column;
+
+  @media only screen and (min-width: 768px) {
+    flex-direction: row;
+    justify-content: space-between;
+    margin-bottom: 2.1429rem;
+  }
+}
+
