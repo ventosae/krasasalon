@@ -51,11 +51,12 @@
        </div>
       </nav>
     </header>
-
-    <section class="intro">
-      <h1 class="intro__header">Контакты - Краса Жулебино</h1>
-      <p class="into__description">orem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.orem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-    </section>
+    <section class="contacts-intro">
+      <div class="intro">
+        <h1 class="intro__header">Контакты - Краса Жулебино</h1>
+        <p class="into__description">orem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.orem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+      </div>
+  </section>
 
     <section class="contacts">
       <div class="contacts__wrapper">
@@ -77,8 +78,8 @@
         </div>
         <div class="contacts__team">
           <div class="ourteam container contacts__ourteam">
-            <h3 class="ourteam__maintitle">Наша Команда</h3>
-            <ul class="ourteam__slides main-carousel2">
+            <h3 class="ourteam__maintitle contracts__ourteam-title">Наша Команда</h3>
+            <ul class="ourteam__slides main-carousel2 contacts__ourteam-slides"">
               <li class="ourteam__slide carousel-cell">
                 <img class="ourteam__image" src="img/igor-pic.png" width="51" height="51" alt="">
                 <h4 class="ourteam__title">Игорь Гуревич</h4>
@@ -102,11 +103,11 @@
             <fieldset class="form__contact">
               <legend class="form__title">Идеи, предложения?</legend>
               <label for="" class="form__field" >Имя*:</label>
-              <input type="text" class="form__input" placeholder="Имя" >
+              <input type="text" class="form__input" placeholder="Имя">
               <label for="" class="form__field">Контактный телефон*:</label>
-              <input type="number" class="form__input" placeholder="Введите Телефон">
-              <label for="" class="form__field">Электронная почта*:</label>
-              <input type="email" class="form__input" placeholder="Введите Email">
+              <input type="phone" class="form__input form__input--phone" placeholder="890500000">
+              <label for="" class="form__field form__field--email">Электронная почта*:</label>
+              <input type="email" class="form__input form__input--email" placeholder="Введите Email">
               <label for="" class="form__field" >Введите Сообщение*:</label>
               <textarea class="form__filed--message" name="" id="" cols="30" rows="10" placeholder="Напишите, что вы ходите сказать"></textarea>
             </fieldset>
@@ -114,7 +115,7 @@
           <div class="form__wrapper">
             <button href="" class="button button--book container form__button">Отправить
             </button>
-            <p class="contacts__text">*Обязательные поля</p>
+            <p class="contacts__text form__text">*Обязательные поля</p>
           </div>
         </div>
     </section>

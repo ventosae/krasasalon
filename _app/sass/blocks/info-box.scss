@@ -21,6 +21,20 @@
 
   @media only screen and (min-width: 1200px) {
     margin: 0;
+    min-width: 32.1429rem;
+    width: 100%;
+  }
+
+  &--time {
+    @media only screen and (min-width: 1200px) {
+      margin-left: 2.1429rem;
+    }
+  }
+
+  &--clock {
+    @media only screen and (min-width: 1200px) {
+      margin-right: 2.1429rem;
+    }
   }
 }
 
@@ -41,6 +55,13 @@
     max-width: 76px;
   }
 
+  @media only screen and (min-width: 1200px) {
+    width: 80px;
+    height: 133px;
+    min-width: 80px;
+    max-width: 80px;
+  }
+
   &--clock {
     width: 65px;
     min-width: 65px;
@@ -51,6 +72,13 @@
       min-width: 130px;
       max-width: 65px;
       height: 122px;
+    }
+
+    @media only screen and (min-width: 1200px) {
+      width: 135px;
+      min-width: 135px;
+      max-width: 135px;
+      height: 135px;
     }
   }
 }

@@ -29,6 +29,10 @@
     content: "flickity";
     display: none;
   }
+
+  @media only screen and (min-width: 768px) {
+    content: " ";
+  }
 }
 
 .ourwork--intro-page ul li:nth-child(2) {

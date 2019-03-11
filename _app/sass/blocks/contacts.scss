@@ -1,5 +1,26 @@
 .contacts {
   position: relative;
+
+  @media only screen and (min-width: 1200px) {
+    display: grid;
+    margin: 0 auto;
+  }
+}
+
+.contacts__logo {
+  @media only screen and (min-width: 768px) {
+    background-image: url(../img/contacts-bg.jpg);
+  }
+
+  @media only screen and (min-width: 1200px) {
+    background-size: cover;
+  }
+}
+
+.contacts-intro {
+  @media only screen and (min-width: 1200px) {
+    margin: auto;
+  }
 }
 
 .contacts__wrapper {
@@ -7,7 +28,9 @@
 
   @media only screen and (min-width: 1200px) {
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+    max-width: 1400px;
+    margin-bottom: 2.8571rem;
   }
 }
 
@@ -52,11 +75,9 @@
     margin: 0;
     align-self: center;
   }
-}
 
-.contacts__logo {
   @media only screen and (min-width: 768px) {
-    background-image: url(../img/contacts-bg.jpg);
+    margin-right: 30%;
   }
 }
 
@@ -67,6 +88,7 @@
     grid-column: 1 / -1;
     display: flex;
     flex: 1;
+    margin-bottom: 2.8571rem;
   }
 }
 
@@ -89,4 +111,14 @@
     grid-column: 1/-1;
     display: contents;
   }
+}
+
+.contracts__ourteam-title {
+  padding-bottom: 2.8571rem;
+}
+
+// SLIDER CSS
+
+.contacts__ourteam-slides {
+  content: " ";
 }
