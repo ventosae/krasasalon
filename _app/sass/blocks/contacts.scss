@@ -41,6 +41,7 @@
 
   @media only screen and (min-width: 1200px) {
     grid-column: 1/-1;
+    padding-bottom: 0;
   }
 }
 
@@ -118,7 +119,25 @@
 }
 
 // SLIDER CSS
-
 .contacts__ourteam-slides {
-  content: " ";
+  @media only screen and (min-width: 1200px) {
+    border: none;
+  }
+}
+
+.contacts__carousel::after {
+  content: "flickity";
+  display: none;
+
+  @media only screen and (min-width: 1200px) {
+    content: " ";
+    border: none;
+  }
+}
+
+.contacts__cell {
+  @media only screen and (min-width: 1200px) {
+    margin-bottom: 2.8571rem;
+    border: 1px solid #ad9d8f;
+  }
 }

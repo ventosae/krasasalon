@@ -63,6 +63,18 @@
   @media only screen and (min-width: 1200px) {
     grid-column: 1 / span 5;
   }
+
+  &:focus {
+    @media only screen and (min-width: 1200px) {
+      border-color: $main-p;
+    }
+
+    &:active {
+      @media only screen and (min-width: 1200px) {
+        border-color: $main-p;
+      }
+    }
+  }
 }
 
 .form__input--phone {
@@ -110,7 +122,7 @@
   }
 
   @media only screen and (min-width: 1200px) {
-    grid-column: 1/-1
+    grid-column: 1/-1;
   }
 }
 

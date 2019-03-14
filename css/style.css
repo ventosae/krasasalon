@@ -1118,7 +1118,7 @@ body::-webkit-scrollbar-thumb {
   position: fixed;
   top: 0;
   left: 0;
-  z-index: 3;
+  z-index: 9999;
   width: 100%;
   height: 100vh;
   margin-top: 16.3vh;
@@ -1750,11 +1750,14 @@ body::-webkit-scrollbar-thumb {
   grid-template-rows: 140px auto;
   margin-left: auto;
   margin-right: auto;
-  grid-template-areas: "header" "about" "benefits" "price" "info" "footer"; }
+  grid-template-areas: "header" "about" "benefits" "price" "info" "footer"; }
   @media only screen and (min-width: 768px) {
     .page-main {
-      grid-template-areas: "header" "about" "price" "benefits" "info" "footer";
+      grid-template-areas: "header" "about" "price" "benefits" "info" "footer";
       grid-template-rows: auto; } }
+
+.page-main__noscroll {
+  position: fixed; }
 
 @media only screen and (min-width: 1200px) {
   .cta {
@@ -2374,7 +2377,8 @@ body::-webkit-scrollbar-thumb {
   padding-top: 0; }
   @media only screen and (min-width: 1200px) {
     .contacts__ourteam {
-      grid-column: 1/-1; } }
+      grid-column: 1/-1;
+      padding-bottom: 0; } }
 
 .contacts::after {
   content: "";
@@ -2443,8 +2447,22 @@ body::-webkit-scrollbar-thumb {
 .contracts__ourteam-title {
   padding-bottom: 2.8571rem; }
 
-.contacts__ourteam-slides {
-  content: " "; }
+@media only screen and (min-width: 1200px) {
+  .contacts__ourteam-slides {
+    border: none; } }
+
+.contacts__carousel::after {
+  content: "flickity";
+  display: none; }
+  @media only screen and (min-width: 1200px) {
+    .contacts__carousel::after {
+      content: " ";
+      border: none; } }
+
+@media only screen and (min-width: 1200px) {
+  .contacts__cell {
+    margin-bottom: 2.8571rem;
+    border: 1px solid #ad9d8f; } }
 
 @media only screen and (min-width: 1200px) {
   .form {
@@ -2522,6 +2540,12 @@ body::-webkit-scrollbar-thumb {
   @media only screen and (min-width: 1200px) {
     .form__input {
       grid-column: 1 / span 5; } }
+  @media only screen and (min-width: 1200px) {
+    .form__input:focus {
+      border-color: #45414e; } }
+  @media only screen and (min-width: 1200px) {
+    .form__input:focus:active {
+      border-color: #45414e; } }
 
 @media only screen and (min-width: 1200px) {
   .form__input--phone {

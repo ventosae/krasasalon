@@ -4,6 +4,10 @@
 var elem = document.querySelector('.main-carousel');
 var elem1 = document.querySelector('.main-carousel1');
 var elem2 = document.querySelector('.main-carousel2');
+var contatctsCarousel = document.querySelector('.contacts__carousel');
+var navigationMenu = document.querySelector('.navigation');
+var mainPage = document.querySelector('.page-main');
+var menuButton = document.querySelector('.header__toggle');
 
 var flkty = new Flickity( elem, {
   cellAlign: 'left',
@@ -19,7 +23,7 @@ var flkty1 = new Flickity( elem1, {
   contain: true,
   prevNextButtons: false,
   contain: true,
-  watchCSS:false
+  watchCSS:true
 });
 
 
@@ -29,7 +33,26 @@ var flkty2 = new Flickity( elem2, {
   contain: true,
   prevNextButtons: false,
   contain: true,
-  pageDots: false
+  pageDots: true
 });
 
+var flkty3 = new Flickity( contatctsCarousel, {
+  cellAlign: 'left',
+  contain: true,
+  watchCSS: true,
+  accessibility: false,
+  imagesLoaded: false,
+  prevNextButtons: false
+});
 
+var menuOpenHandler = function () {
+  if (navigationMenu.className == "navigation navigation--closed") {
+    navigationMenu.classList.remove('navigation--closed');
+    mainPage.classList.add('page-main__noscroll');
+  } else if (navigationMenu.className == "navigation") {
+    navigationMenu.classList.add('navigation--closed');
+    mainPage.classList.remove('page-main__noscroll');
+  }
+};
+
+menuButton.addEventListener('click', menuOpenHandler);
