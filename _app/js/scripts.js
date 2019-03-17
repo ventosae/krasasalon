@@ -1,6 +1,3 @@
-// element argument can be a selector string
-//   for an individual element
-
 var elem = document.querySelector('.main-carousel');
 var elem1 = document.querySelector('.main-carousel1');
 var elem2 = document.querySelector('.main-carousel2');
@@ -8,6 +5,9 @@ var contatctsCarousel = document.querySelector('.contacts__carousel');
 var navigationMenu = document.querySelector('.navigation');
 var mainPage = document.querySelector('.page-main');
 var menuButton = document.querySelector('.header__toggle');
+var submitButton = document.querySelector('.form__button');
+
+
 
 var flkty = new Flickity( elem, {
   cellAlign: 'left',
@@ -55,4 +55,19 @@ var menuOpenHandler = function () {
   }
 };
 
+var formsValidHandler = function () {
+  var formsInputs = document.querySelector('.form').getElementsByTagName('input');
+  var inputsArray = Array.from(formsInputs)
+  inputsArray.push(document.querySelector(".form__filed--message"));
+  inputsArray.forEach(function (e) {
+      if (e.validity.valid === false) {
+        e.style.boxShadow = "rgb(255, 101, 71) 0px 0px 2px 2px";
+      } else if (e.validity.valid === true) {
+        e.style.boxShadow = null;
+      }
+    })
+};
+
 menuButton.addEventListener('click', menuOpenHandler);
+submitButton.addEventListener('click', formsValidHandler);
+

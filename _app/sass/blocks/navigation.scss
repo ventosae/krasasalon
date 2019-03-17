@@ -9,14 +9,14 @@
 }
 
 .navigation__list {
-  position: fixed;
-  top: 0;
+  position: absolute;
+  top: 140px;
   left: 0;
   z-index: 9999;
 
   width: 100%;
   height: 100vh;
-  margin-top: 16.3vh;
+
 
   background: $light-b;
 
@@ -27,6 +27,7 @@
 
     position: relative;
     height: auto;
+    top: 0;
     margin-top: 0;
     background-color: $main-p;
   }
@@ -112,8 +113,7 @@
 .navigation__item--active {
   display: grid;
   justify-content: center;
-
-  font-family: $futurist-medium-font;
+  font-size: 1.2857rem;
   color: white;
 
   &::after {
@@ -138,7 +138,8 @@
 
   color: white;
   text-decoration: none;
-
+  padding: 1.6em 26em;
+  margin: -1.6em -26em;
   transition: background-color 0.2s linear, border-color 0.2s linear, color 0.2s linear;
 
   &:focus {
@@ -151,6 +152,8 @@
     font-size: 1.2857rem;
     line-height: 1.7143rem;
     font-weight: 500;
+    padding: 0;
+    margin: 0;
   }
 }
 

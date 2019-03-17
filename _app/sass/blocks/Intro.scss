@@ -40,6 +40,7 @@
 .into__description {
   @include reset;
   padding-bottom: 1.5714rem;
+  margin-top: -7px;
 
   @media screen and (min-width: 768px) {
     text-align: left;
@@ -47,10 +48,12 @@
     line-height: 1.7143rem;
     grid-column: 1 / span 3;
     padding-bottom: 1.7857rem;
+    margin-top: 0;
   }
 
   @media screen and (min-width: 1200px) {
     padding-bottom: 3.5714rem;
     grid-column: 1 / span 2;
+    margin-top: 0;
   }
 }

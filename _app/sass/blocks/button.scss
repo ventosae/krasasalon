@@ -22,11 +22,13 @@
   }
 
   &:active {
+    outline: none;
     transition: opacity 0.2s linear, color 0.2s linear;
     opacity: 0.8;
   }
 
   &:focus {
+    outline: none;
     transition: opacity 0.2s linear, color 0.2s linear;
     opacity: 0.6;
   }

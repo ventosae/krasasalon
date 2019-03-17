@@ -11,6 +11,13 @@
   <link rel="stylesheet" href="css\flickity.min.css">
   <script src="js\flickity.pkgd.min.js"></script>
   <script src="js\scripts.js" async defer></script>
+  <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+  <link rel="manifest" href="/site.webmanifest">
+  <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#45414e">
+  <meta name="msapplication-TileColor" content="#ffffff">
+  <meta name="theme-color" content="#ffffff">
 </head>
 
 <body>
@@ -44,11 +51,11 @@
       <nav class="navigation navigation--closed">
         <div class="navigation__list">
           <ul class="navigation__items">
-            <li class="navigation__item navigation__item--active"><a class="navigation__link">главная</a></li>
+            <li class="navigation__item "><a href="/" class="navigation__link">главная</a></li>
             <li class="navigation__item"><a href="/our-works.html" class="navigation__link">наши работы</a></li>
-            <li class="navigation__item"><a href="/kosmetology.html" class="navigation__link">косметология</a></li>
+             <li class="navigation__item"> <a href="/cosmetology.html" class="navigation__link">косметология</a></li>
             <li class="navigation__item"><a href="/manicure.html" class="navigation__link">ногти</a></li>
-            <li class="navigation__item"><a href="/contacts.html" class="navigation__link">контакты</a></li>
+            <li class="navigation__item navigation__item--active"><a class="navigation__link ">контакты</a></li>
           </ul>
         </div>
       </nav>
@@ -69,7 +76,7 @@
             <svg class="info-box__image" viewBox="25 8 50 84" width="100%" height="100%">
               <path d="M67.3,8.6H32.7c-3.8,0-6.8,3.1-6.8,6.8v69.1c0,3.8,3.1,6.8,6.8,6.8h34.5c3.8,0,6.9-3.1,6.9-6.9v-69  C74.1,11.7,71,8.6,67.3,8.6z M39.6,12.1h20.7v1.7c0,1-0.8,1.7-1.7,1.7H41.3c-1,0-1.7-0.8-1.7-1.7V12.1z M70.6,84.5  c0,1.9-1.5,3.4-3.4,3.4H32.7c-1.9,0-3.4-1.5-3.4-3.4V15.4c0-1.9,1.5-3.4,3.4-3.4h3.4v1.7c0,2.9,2.3,5.2,5.2,5.2h17.2  c2.9,0,5.2-2.3,5.2-5.2v-1.7h3.5c1.9,0,3.4,1.5,3.4,3.4V84.5z M50,48.3c1,0,1.7,0.8,1.7,1.7c0,1-0.8,1.7-1.7,1.7  c-1,0-1.7-0.8-1.7-1.7C48.3,49,49,48.3,50,48.3z M43.4,48.3c1,0,1.7,0.8,1.7,1.7c0,1-0.8,1.7-1.7,1.7c-1,0-1.7-0.8-1.7-1.7  C41.7,49,42.4,48.3,43.4,48.3z M56.6,48.3c1,0,1.7,0.8,1.7,1.7c0,1-0.8,1.7-1.7,1.7c-1,0-1.7-0.8-1.7-1.7  C54.9,49,55.7,48.3,56.6,48.3z"></path>
             </svg>
-            <p class="info-box__text">Телефон: <span class="info-box__text--phone">9325521</span>
+            <p class="info-box__text">Телефон: <a href="9325521" class="info-box__text--phone">9325521</a>
               Алена</p>
           </div>
           <div class="info-box info-box--time">
@@ -115,24 +122,24 @@
           </div>
         </div>
         <div class="contacts__form">
-          <from class="form">
+          <form class="form" method="post" autocomplete="on" >
             <fieldset class="form__contact">
               <legend class="form__title">Идеи, предложения?</legend>
-              <label for="" class="form__field">Имя*:</label>
-              <input type="text" class="form__input" placeholder="Имя">
-              <label for="" class="form__field">Контактный телефон*:</label>
-              <input type="phone" class="form__input form__input--phone" placeholder="890500000">
-              <label for="" class="form__field form__field--email">Электронная почта*:</label>
-              <input type="email" class="form__input form__input--email" placeholder="Введите Email">
+              <label for="name" class="form__field">Имя*:</label>
+              <input name="name" id="name" type="text" class="form__input" placeholder="Имя" required>
+              <label for="phone" class="form__field">Контактный телефон*:</label>
+              <input name="phone" minlength="5" id="phone" type="phone" class="form__input form__input--phone" placeholder="890500000" required>
+              <label for="email" class="form__field form__field--email">Электронная почта*:</label>
+              <input name="email" id="email" type="email" class="form__input form__input--email" placeholder="Введите Email" required>
               <label for="" class="form__field">Введите Сообщение*:</label>
-              <textarea class="form__filed--message" name="" id="" cols="30" rows="10" placeholder="Напишите, что вы ходите сказать"></textarea>
+              <textarea name="text" id="text" class="form__filed--message" cols="30" rows="10" placeholder="Напишите, что вы ходите сказать" required></textarea>
             </fieldset>
-          </from>
-          <div class="form__wrapper">
-            <button href="" class="button button--book container form__button">Отправить
-            </button>
-            <p class="contacts__text form__text">*Обязательные поля</p>
-          </div>
+            <div class="form__wrapper">
+              <button type="submit" class="button button--book container form__button">Отправить
+              </button>
+              <p class="contacts__text form__text">*Обязательные поля</p>
+            </div>
+          </form>
         </div>
     </section>
 

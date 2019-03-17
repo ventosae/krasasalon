@@ -38,7 +38,10 @@
   @media only screen and (min-width: 1200px) {
     height: calc(100vh - 71px);
     padding-top: 188px;
-    background-position: center bottom 98%;
+    background-position: center bottom 65%;
+    background-size: cover;
+    min-height: 450px;
+
   }
 }
 
@@ -88,6 +91,7 @@
   display: flex;
   background-color: $light-b;
   justify-content: space-between;
+  position: relative;
 
   @media only screen and (min-width: 768px) {
     display: none;

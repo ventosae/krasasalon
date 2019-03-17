@@ -65,15 +65,13 @@
   }
 
   &:focus {
-    @media only screen and (min-width: 1200px) {
-      border-color: $main-p;
-    }
+    outline: none;
+    box-shadow: 0 0 2px 2px $dark-b;
+  }
 
-    &:active {
-      @media only screen and (min-width: 1200px) {
-        border-color: $main-p;
-      }
-    }
+  &:active {
+    outline: none;
+    box-shadow: 0 0 2px 2px $dark-b;
   }
 }
 
@@ -114,6 +112,7 @@
   margin-bottom: 2.1429rem;
   color: $text-color;
   padding-top: 0.7143rem;
+  resize: none;
 
   @media only screen and (min-width: 768px) {
     font-size: 1.5714rem;
@@ -123,6 +122,16 @@
 
   @media only screen and (min-width: 1200px) {
     grid-column: 1/-1;
+  }
+
+  &:focus {
+    outline: none;
+    box-shadow: 0 0 2px 2px $dark-b;
+  }
+
+  &:active {
+    outline: none;
+    box-shadow: 0 0 2px 2px $dark-b;
   }
 }
 
