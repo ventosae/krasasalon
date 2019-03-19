@@ -113,8 +113,11 @@
 .navigation__item--active {
   display: grid;
   justify-content: center;
-  font-size: 1.2857rem;
   color: white;
+
+  @media only screen and (min-width: 768px) {
+    font-size: 1.2857rem;
+  }
 
   &::after {
     content: "";

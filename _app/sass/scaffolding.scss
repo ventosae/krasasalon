@@ -85,3 +85,27 @@ body::-webkit-scrollbar-thumb {
   display: grid;
   margin: 0 auto;
 }
+
+//SVG ANIMATION
+
+.info-box__image--clock:hover .clockhand {
+  transition: 0.5s;
+  fill: #ad9d8f;
+  transform: translate(0, 0) rotate(360deg);
+}
+
+.phone:hover {
+  fill: #ad9d8f;
+  animation-name: wobble;
+  animation-fill-mode: both;
+  animation-duration: 1s;
+}
+
+/* Small Devices, Tablets */
+@media only screen and (max-width: 768px) {
+  .animated {
+    transition-property: none !important;
+    transform: none !important;
+    animation: none !important;
+  }
+}

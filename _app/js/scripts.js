@@ -1,3 +1,9 @@
+//WOW JS
+
+
+
+//MAIN JS
+
 var elem = document.querySelector('.main-carousel');
 var elem1 = document.querySelector('.main-carousel1');
 var elem2 = document.querySelector('.main-carousel2');
@@ -6,8 +12,7 @@ var navigationMenu = document.querySelector('.navigation');
 var mainPage = document.querySelector('.page-main');
 var menuButton = document.querySelector('.header__toggle');
 var submitButton = document.querySelector('.form__button');
-
-
+var burger = document.querySelector('.hamburger');
 
 var flkty = new Flickity( elem, {
   cellAlign: 'left',
@@ -49,9 +54,11 @@ var menuOpenHandler = function () {
   if (navigationMenu.className == "navigation navigation--closed") {
     navigationMenu.classList.remove('navigation--closed');
     mainPage.classList.add('page-main__noscroll');
+    burger.classList.add('is-active');
   } else if (navigationMenu.className == "navigation") {
     navigationMenu.classList.add('navigation--closed');
     mainPage.classList.remove('page-main__noscroll');
+    burger.classList.remove('is-active');
   }
 };
 

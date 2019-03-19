@@ -13,6 +13,12 @@ $futurist-medium-font: "Futuris-Bold", arial, helvetica, sans-serif;
 // $retina-dpi: 144dpi;
 // $retina-dppx: 1.5dppx;
 
+.wow {
+  @media screen and (max-width: 1200px) {
+    animation-name: none !important;
+    visibility: visible !important;
+  }
+}
 
 @mixin reset($padding: 0, $margin: 0) {
   padding: $padding;
