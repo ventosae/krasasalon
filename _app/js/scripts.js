@@ -75,6 +75,10 @@ var formsValidHandler = function () {
     })
 };
 
-menuButton.addEventListener('click', menuOpenHandler);
-submitButton.addEventListener('click', formsValidHandler);
+if (menuButton != null) {
+  menuButton.addEventListener('click', menuOpenHandler);
+  };
 
+if (submitButton != null) {
+  submitButton.addEventListener('click', formsValidHandler);
+  };

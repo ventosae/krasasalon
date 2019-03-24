@@ -136,8 +136,14 @@ https://flickity.metafizzy.co
   transition: background-color 0.2s linear;
 }
 
+@media only screen and (min-width: 1200px) {
+  .flickity-page-dots .dot {
+    width: 12px;
+    height: 12px;
+  }
+}
+
 .flickity-page-dots .dot.is-selected {
   opacity: 1;
   background-color: #444445;
-
 }

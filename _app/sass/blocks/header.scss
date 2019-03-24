@@ -74,6 +74,7 @@
   text-decoration: underline;
   font-size: 1.286em;
   line-height: 1.714em;
+  color: white;
 }
 
 .header__toggle {
@@ -85,6 +86,24 @@
   padding: 0;
   margin: 0;
   flex: 0 1 auto;
+
+  &:active {
+    box-shadow: none;
+    border: 0;
+    outline: none;
+  }
+
+  &:focus {
+    box-shadow: none;
+    border: 0;
+    outline: none;
+  }
+
+  &:active {
+    box-shadow: none;
+    border: 0;
+    outline: none;
+  }
 }
 
 .header__mobile-wrapper {
@@ -106,6 +125,9 @@
 
 .header__instagram,
 .header__facebook {
+  display: grid;
+  align-self: center;
+
   &:hover {
     transition: opacity 0.2s linear;
     opacity: 0.8;

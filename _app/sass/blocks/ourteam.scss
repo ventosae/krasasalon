@@ -16,8 +16,9 @@
 
   @media only screen and (min-width: 1200px) {
     @include limitm;
-    padding-top: 7.1429rem;
+    margin-top: 7.1429rem;
     padding-bottom: 7.1429rem;
+    padding-top: 0;
   }
 }
 

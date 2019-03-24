@@ -1025,7 +1025,8 @@ body::-webkit-scrollbar-thumb {
   list-style: none;
   text-decoration: underline;
   font-size: 1.286em;
-  line-height: 1.714em; }
+  line-height: 1.714em;
+  color: white; }
 
 .header__toggle {
   display: -webkit-box;
@@ -1042,6 +1043,21 @@ body::-webkit-scrollbar-thumb {
   -webkit-box-flex: 0;
       -ms-flex: 0 1 auto;
           flex: 0 1 auto; }
+  .header__toggle:active {
+    -webkit-box-shadow: none;
+            box-shadow: none;
+    border: 0;
+    outline: none; }
+  .header__toggle:focus {
+    -webkit-box-shadow: none;
+            box-shadow: none;
+    border: 0;
+    outline: none; }
+  .header__toggle:active {
+    -webkit-box-shadow: none;
+            box-shadow: none;
+    border: 0;
+    outline: none; }
 
 .header__mobile-wrapper {
   display: -webkit-box;
@@ -1061,23 +1077,25 @@ body::-webkit-scrollbar-thumb {
   line-height: 1.2857rem;
   padding-left: 55px; }
 
-.header__instagram:hover,
-.header__facebook:hover {
-  -webkit-transition: opacity 0.2s linear;
-  transition: opacity 0.2s linear;
-  opacity: 0.8; }
-
-.header__instagram:active,
-.header__facebook:active {
-  -webkit-transition: opacity 0.2s linear;
-  transition: opacity 0.2s linear;
-  opacity: 0.8; }
-
-.header__instagram:focus,
-.header__facebook:focus {
-  -webkit-transition: opacity 0.2s linear;
-  transition: opacity 0.2s linear;
-  opacity: 0.6; }
+.header__instagram,
+.header__facebook {
+  display: grid;
+  align-self: center; }
+  .header__instagram:hover,
+  .header__facebook:hover {
+    -webkit-transition: opacity 0.2s linear;
+    transition: opacity 0.2s linear;
+    opacity: 0.8; }
+  .header__instagram:active,
+  .header__facebook:active {
+    -webkit-transition: opacity 0.2s linear;
+    transition: opacity 0.2s linear;
+    opacity: 0.8; }
+  .header__instagram:focus,
+  .header__facebook:focus {
+    -webkit-transition: opacity 0.2s linear;
+    transition: opacity 0.2s linear;
+    opacity: 0.6; }
 
 @media only screen and (min-width: 768px) {
   .header__logo--tablet::after {
@@ -1139,7 +1157,8 @@ body::-webkit-scrollbar-thumb {
   -webkit-transform: rotate(180deg);
           transform: rotate(180deg);
   z-index: 99;
-  width: 100%; }
+  width: 100%;
+  background-size: 100% 100%; }
   @media only screen and (min-width: 768px) {
     .info::after {
       display: none; } }
@@ -1337,8 +1356,9 @@ body::-webkit-scrollbar-thumb {
     .ourteam {
       max-width: 1400px;
       margin: 0 auto;
-      padding-top: 7.1429rem;
-      padding-bottom: 7.1429rem; } }
+      margin-top: 7.1429rem;
+      padding-bottom: 7.1429rem;
+      padding-top: 0; } }
 
 .ourteam__maintitle {
   margin: 0;
@@ -1646,7 +1666,8 @@ body::-webkit-scrollbar-thumb {
   fill: #ffffff;
   bottom: -34px;
   margin-left: -1.4286rem;
-  margin-right: -1.4286rem; }
+  margin-right: -1.4286rem;
+  background-size: 100% 100%; }
   @media only screen and (min-width: 768px) {
     .ourwork--intro-page::after {
       content: " ";
@@ -1773,7 +1794,8 @@ body::-webkit-scrollbar-thumb {
           transform: rotate(180deg);
   z-index: 99;
   fill: #ffffff;
-  bottom: -34px; }
+  bottom: -34px;
+  background-size: 100% 100%; }
   @media only screen and (min-width: 768px) {
     .pricetable::after {
       display: none; } }
@@ -1989,7 +2011,7 @@ body::-webkit-scrollbar-thumb {
   content: "";
   position: absolute;
   right: 0;
-  bottom: -34px;
+  bottom: -35px;
   left: 0;
   height: 35px;
   background-image: url("../img/corner-dark.svg");
@@ -1997,7 +2019,8 @@ body::-webkit-scrollbar-thumb {
   -webkit-transform: rotate(180deg);
           transform: rotate(180deg);
   z-index: 99;
-  fill: #f2f3f7; }
+  fill: #f2f3f7;
+  background-size: 100% 100%; }
   @media only screen and (min-width: 768px) {
     .price::after {
       content: " "; } }
@@ -2119,7 +2142,8 @@ body::-webkit-scrollbar-thumb {
   z-index: 99;
   fill: #ffffff;
   height: 34px;
-  bottom: -33px; }
+  bottom: -34px;
+  background-size: 100% 100%; }
   @media only screen and (min-width: 768px) {
     .cosmetology__cta::after {
       display: none; } }
@@ -2222,7 +2246,8 @@ body::-webkit-scrollbar-thumb {
   z-index: 99;
   fill: #ffffff;
   height: 34px;
-  bottom: -33px; }
+  bottom: -34px;
+  background-size: 100% 100%; }
   @media only screen and (min-width: 768px) {
     .manicure__cta::after {
       display: none; } }
@@ -2435,7 +2460,7 @@ body::-webkit-scrollbar-thumb {
   content: "";
   position: absolute;
   right: 0;
-  bottom: -34px;
+  bottom: -35px;
   left: 0;
   height: 35px;
   background-image: url(../img/corner-white.svg);
@@ -2443,7 +2468,8 @@ body::-webkit-scrollbar-thumb {
   -webkit-transform: rotate(180deg);
           transform: rotate(180deg);
   z-index: 99;
-  width: 100%; }
+  width: 100%;
+  background-size: 100% 100%; }
   @media only screen and (min-width: 768px) {
     .contacts::after {
       display: none; } }

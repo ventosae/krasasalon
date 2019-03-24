@@ -50,7 +50,8 @@
     "html": "gulp html",
     "spriteme": "npm run sprite && npm run html",
     "clean": "gulp clean",
-    "jekyll": "gulp jekyll-build"
+    "jekyll": "gulp jekyll-build",
+    "deploy aws": "aws s3 sync --delete ./_app s3://krasa-zhulebino.ru"
   },
   "browserslist": [
     "last 2 versions",
