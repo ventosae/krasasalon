@@ -41,7 +41,12 @@
     background-position: center bottom 65%;
     background-size: cover;
     min-height: 450px;
+  }
+}
 
+.header__logo--main {
+  @media only screen and (min-width: 1200px) {
+    min-height: 850px;
   }
 }
 
@@ -94,12 +99,6 @@
   }
 
   &:focus {
-    box-shadow: none;
-    border: 0;
-    outline: none;
-  }
-
-  &:active {
     box-shadow: none;
     border: 0;
     outline: none;

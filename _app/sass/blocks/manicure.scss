@@ -3,6 +3,8 @@
 }
 
 .manicure__main {
+  position: relative;
+
   @media only screen and (min-width: 1200px) {
     margin: auto;
   }
@@ -42,7 +44,7 @@
   }
 }
 
-.manicure__cta::after {
+.manicure__main::after {
   content: "";
   position: absolute;
   right: 0;

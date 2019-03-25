@@ -991,6 +991,10 @@ body::-webkit-scrollbar-thumb {
       background-size: cover;
       min-height: 450px; } }
 
+@media only screen and (min-width: 1200px) {
+  .header__logo--main {
+    min-height: 850px; } }
+
 @media only screen and (min-width: 768px) {
   .header__picture {
     width: 203px;
@@ -1049,11 +1053,6 @@ body::-webkit-scrollbar-thumb {
     border: 0;
     outline: none; }
   .header__toggle:focus {
-    -webkit-box-shadow: none;
-            box-shadow: none;
-    border: 0;
-    outline: none; }
-  .header__toggle:active {
     -webkit-box-shadow: none;
             box-shadow: none;
     border: 0;
@@ -2099,9 +2098,11 @@ body::-webkit-scrollbar-thumb {
 .cosmetology__intro {
   margin: auto; }
 
-@media only screen and (min-width: 1200px) {
-  .cosmetology__main {
-    margin: auto; } }
+.cosmetology__main {
+  position: relative; }
+  @media only screen and (min-width: 1200px) {
+    .cosmetology__main {
+      margin: auto; } }
 
 @media only screen and (min-width: 1200px) {
   .cosmetology__price {
@@ -2130,7 +2131,7 @@ body::-webkit-scrollbar-thumb {
       padding-top: 0;
       padding-bottom: 0; } }
 
-.cosmetology__cta::after {
+.cosmetology__main::after {
   content: "";
   position: absolute;
   right: 0;
@@ -2145,7 +2146,7 @@ body::-webkit-scrollbar-thumb {
   bottom: -34px;
   background-size: 100% 100%; }
   @media only screen and (min-width: 768px) {
-    .cosmetology__cta::after {
+    .cosmetology__main::after {
       display: none; } }
 
 @media only screen and (min-width: 768px) {
@@ -2203,9 +2204,11 @@ body::-webkit-scrollbar-thumb {
 .manicure__intro {
   margin: auto; }
 
-@media only screen and (min-width: 1200px) {
-  .manicure__main {
-    margin: auto; } }
+.manicure__main {
+  position: relative; }
+  @media only screen and (min-width: 1200px) {
+    .manicure__main {
+      margin: auto; } }
 
 @media only screen and (min-width: 1200px) {
   .manicure__price {
@@ -2234,7 +2237,7 @@ body::-webkit-scrollbar-thumb {
       padding-top: 0;
       padding-bottom: 0; } }
 
-.manicure__cta::after {
+.manicure__main::after {
   content: "";
   position: absolute;
   right: 0;
@@ -2249,7 +2252,7 @@ body::-webkit-scrollbar-thumb {
   bottom: -34px;
   background-size: 100% 100%; }
   @media only screen and (min-width: 768px) {
-    .manicure__cta::after {
+    .manicure__main::after {
       display: none; } }
 
 @media only screen and (min-width: 768px) {

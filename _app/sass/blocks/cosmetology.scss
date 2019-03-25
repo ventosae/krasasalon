@@ -3,6 +3,8 @@
 }
 
 .cosmetology__main {
+  position: relative;
+
   @media only screen and (min-width: 1200px) {
     margin: auto;
   }
@@ -42,7 +44,7 @@
   }
 }
 
-.cosmetology__cta::after {
+.cosmetology__main::after {
   content: "";
   position: absolute;
   right: 0;
