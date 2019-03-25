@@ -70,16 +70,17 @@
     "node": "8.11"
   },
   "dependencies": {
-    "hamburgers": "^0.9.3",
-    "jekyll": "^3.0.0-beta1",
-    "wow.js": "^1.2.2",
     "cryptiles": ">=4.1.2",
+    "deep-extend": ">=0.5.1",
     "extend": ">=3.0.2",
-    "lodash": ">=4.17.11",
+    "hamburgers": "^0.9.3",
     "hoek": ">=4.2.1",
+    "jekyll": "^3.0.0-beta1",
+    "lodash": ">=4.17.11",
     "merge": ">=1.2.1",
+    "nodemon": "^1.18.10",
     "randomatic": ">=3.0.0",
-    "deep-extend": ">=0.5.1"
+    "wow.js": "^1.2.2"
   },
   "stylintignore": [
     "/css/style.css",
