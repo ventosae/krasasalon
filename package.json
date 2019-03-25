@@ -73,7 +73,13 @@
     "hamburgers": "^0.9.3",
     "jekyll": "^3.0.0-beta1",
     "wow.js": "^1.2.2",
-    "cryptiles": ">=4.1.2"
+    "cryptiles": ">=4.1.2",
+    "extend": ">=3.0.2",
+    "lodash": ">=4.17.11",
+    "hoek": ">=4.2.1",
+    "merge": ">=1.2.1",
+    "randomatic": ">=3.0.0",
+    "deep-extend": ">=0.5.1"
   },
   "stylintignore": [
     "/css/style.css",
