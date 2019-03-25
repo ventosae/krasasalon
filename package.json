@@ -72,7 +72,8 @@
   "dependencies": {
     "hamburgers": "^0.9.3",
     "jekyll": "^3.0.0-beta1",
-    "wow.js": "^1.2.2"
+    "wow.js": "^1.2.2",
+    "cryptiles": ">=4.1.2"
   },
   "stylintignore": [
     "/css/style.css",
