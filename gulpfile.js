@@ -31,14 +31,14 @@ var config       = require('./_app/gulp/config');
 gulp.task("build", function (done) {
   run(
     "clean",
-    // "images",
-    // "webp",
+    "images",
+    "webp",
     "copy",
     "style",
-    "sprite",
+    // "sprite",
     "htmlmin",
     "compress",
-    // "jekyll-build",
+    "jekyll-build",
     done
   );
 });
@@ -99,7 +99,7 @@ gulp.task("images", function () {
   .pipe(imagemin([
     imagemin.gifsicle({interlaced: true}),
     imagemin.jpegtran({progressive: true}),
-    imagemin.optipng({optimizationLevel: 5}),
+    imagemin.optipng({optimizationLevel: 50}),
     imagemin.svgo({
         plugins: [
             {removeViewBox: true},
